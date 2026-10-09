@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-10T06:51:06.615090+08:00",
+  "generated_at": "2026-10-10T06:52:43.341801+08:00",
   "total": 18,
   "items": [
     {
       "title": "affaan-m/ECC",
-      "brief": "",
+      "brief": "给 Claude Code、Cursor 等 agent 加技能、记忆和安全层的优化框架。",
       "url": "https://github.com/affaan-m/ECC",
       "source": "github",
       "source_label": "GitHub",
@@ -34,7 +34,7 @@
     },
     {
       "title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
-      "brief": "",
+      "brief": "非文本模型 Jev 用更少 token 跑更快，几周内估值冲到 75 亿美元。",
       "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
       "source": "media_rss",
       "source_label": "媒体",
@@ -50,7 +50,7 @@
     },
     {
       "title": "Typesafe AI raises $870M at $7.5B",
-      "brief": "",
+      "brief": "TypeSafe 靠非文本架构拿下 8.7 亿美元融资，挑战 LLM 主流路线。",
       "url": "https://typesafe.ai/blog/series-ai",
       "source": "media_rss",
       "source_label": "媒体",
@@ -66,7 +66,7 @@
     },
     {
       "title": "Amazon drops data center NDAs, and AI agents want your credit card",
-      "brief": "",
+      "brief": "亚马逊跟进微软，数据中心谈判不再要求地方政府签保密协议。",
       "url": "https://techcrunch.com/podcast/amazon-drops-data-center-ndas-and-ai-agents-want-your-credit-card/",
       "source": "media_rss",
       "source_label": "媒体",
@@ -82,7 +82,7 @@
     },
     {
       "title": "We can’t help treating AI like it’s human. But should we?",
-      "brief": "",
+      "brief": "Turkle 指出人天生会对 AI 产生情感回馈，这种本能可能被利用。",
       "url": "https://techcrunch.com/2026/10/09/we-cant-help-treating-ai-like-its-human-but-should-we/",
       "source": "media_rss",
       "source_label": "媒体",
@@ -130,7 +130,7 @@
     },
     {
       "title": "A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization",
-      "brief": "",
+      "brief": "系统评测 LLM agent 做黑盒优化的能力，这类场景评估成本极高。",
       "url": "https://arxiv.org/abs/2610.12183v1",
       "source": "arxiv",
       "source_label": "论文",
@@ -154,7 +154,7 @@
     },
     {
       "title": "NousResearch/hermes-agent",
-      "brief": "",
+      "brief": "NousResearch 推出可随使用逐步成长的 agent，主打长期记忆演化。",
       "url": "https://github.com/NousResearch/hermes-agent",
       "source": "github",
       "source_label": "GitHub",
@@ -184,7 +184,7 @@
     },
     {
       "title": "Accurate but Not Humble: Evaluating Epistemic Humility in LLM Agents under Knowledge Conflict",
-      "brief": "",
+      "brief": "测试 agent 遇到证据与自身判断冲突时，是否承认不确定还是硬撑。",
       "url": "https://arxiv.org/abs/2610.12360v1",
       "source": "arxiv",
       "source_label": "论文",
@@ -230,7 +230,7 @@
     },
     {
       "title": "firecrawl/firecrawl",
-      "brief": "",
+      "brief": "为 AI agent 提供网页抓取与数据接入的开源库，定位超智能基础设施。",
       "url": "https://github.com/firecrawl/firecrawl",
       "source": "github",
       "source_label": "GitHub",
@@ -296,7 +296,7 @@
       "source_label": "GitHub",
       "summary": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
       "score": 19.7,
-      "raw_score": 182536.0,
+      "raw_score": 182537.0,
       "author": "ollama",
       "published_at": "2026-10-09T22:08:10+00:00",
       "tags": [
@@ -305,7 +305,7 @@
         "gemma3"
       ],
       "extra": {
-        "stars": 182536,
+        "stars": 182537,
         "forks": 18174,
         "language": "Go",
         "topics": [
@@ -366,7 +366,7 @@
       ],
       "extra": {
         "stars": 166934,
-        "forks": 34777,
+        "forks": 34778,
         "language": "Python",
         "topics": [
           "audio",
@@ -408,7 +408,7 @@
       "source_label": "GitHub",
       "summary": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "score": 0.0,
-      "raw_score": 159582.0,
+      "raw_score": 159583.0,
       "author": "DietrichGebert",
       "published_at": "2026-10-08T16:19:55+00:00",
       "tags": [
@@ -417,7 +417,7 @@
         "claude"
       ],
       "extra": {
-        "stars": 159582,
+        "stars": 159583,
         "forks": 8583,
         "language": "JavaScript",
         "topics": [
