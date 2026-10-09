@@ -3,44 +3,53 @@
 
 **📰 值得一读** · 媒体解读与观点
 
-1. **The maker of non-text AI model Jev valued at $7.5B just weeks after launch**
-   <font color="comment">10-09 21:41</font>
+1. **非文本模型 Jev 用更少 token 跑更快，几周内估值冲到 75 亿美元。**
+   <font color="comment">The maker of non-text AI model Jev valued at $7.5B just weeks…</font>
+   <font color="comment">TechCrunch AI · 10-09 21:41</font>
    [阅读原文](https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/)
 
-2. **Typesafe AI raises $870M at $7.5B**
-   <font color="comment">10-09 17:02</font>
+2. **TypeSafe 靠非文本架构拿下 8.7 亿美元融资，挑战 LLM 主流路线。**
+   <font color="comment">Typesafe AI raises $870M at $7.5B</font>
+   <font color="comment">Hacker News AI · 10-09 17:02</font>
    [阅读原文](https://typesafe.ai/blog/series-ai)
 
-3. **Amazon drops data center NDAs, and AI agents want your credit card**
-   <font color="comment">10-09 16:53</font>
+3. **亚马逊跟进微软，数据中心谈判不再要求地方政府签保密协议。**
+   <font color="comment">Amazon drops data center NDAs, and AI agents want your credit…</font>
+   <font color="comment">TechCrunch AI · 10-09 16:53</font>
    [阅读原文](https://techcrunch.com/podcast/amazon-drops-data-center-ndas-and-ai-agents-want-your-credit-card/)
 
-4. **We can’t help treating AI like it’s human. But should we?**
-   <font color="comment">10-09 16:40</font>
+4. **Turkle 指出人天生会对 AI 产生情感回馈，这种本能可能被利用。**
+   <font color="comment">We can’t help treating AI like it’s human. But should we?</font>
+   <font color="comment">TechCrunch AI · 10-09 16:40</font>
    [阅读原文](https://techcrunch.com/2026/10/09/we-cant-help-treating-ai-like-its-human-but-should-we/)
 
 **📦 新项目** · GitHub 热门仓库
 
-1. **affaan-m/ECC**
-   <font color="comment">⭐275945 · 10-10 05:54</font>
+1. **给 Claude Code、Cursor 等 agent 加技能、记忆和安全层的优化框架。**
+   <font color="comment">affaan-m/ECC</font>
+   <font color="comment">⭐275945 · JavaScript · 10-10 05:54</font>
    [阅读原文](https://github.com/affaan-m/ECC)
 
-2. **NousResearch/hermes-agent**
-   <font color="comment">⭐252277 · 10-10 06:26</font>
+2. **NousResearch 推出可随使用逐步成长的 agent，主打长期记忆演化。**
+   <font color="comment">NousResearch/hermes-agent</font>
+   <font color="comment">⭐252277 · Python · 10-10 06:26</font>
    [阅读原文](https://github.com/NousResearch/hermes-agent)
 
-3. **firecrawl/firecrawl**
-   <font color="comment">⭐189914 · 10-10 04:30</font>
+3. **为 AI agent 提供网页抓取与数据接入的开源库，定位超智能基础设施。**
+   <font color="comment">firecrawl/firecrawl</font>
+   <font color="comment">⭐189914 · TypeScript · 10-10 04:30</font>
    [阅读原文](https://github.com/firecrawl/firecrawl)
 
 **📄 论文速览** · 有工程价值的论文
 
-1. **A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization**
-   <font color="comment">10-08 15:48</font>
+1. **系统评测 LLM agent 做黑盒优化的能力，这类场景评估成本极高。**
+   <font color="comment">A Closer Look at Agentic BBO: Benchmarking LLM Agents for…</font>
+   <font color="comment">cs.LG/cs.AI · 10-08 15:48</font>
    [阅读原文](https://arxiv.org/abs/2610.12183v1)
 
-2. **Accurate but Not Humble: Evaluating Epistemic Humility in LLM Agents under Knowledge Conflict**
-   <font color="comment">10-08 17:25</font>
+2. **测试 agent 遇到证据与自身判断冲突时，是否承认不确定还是硬撑。**
+   <font color="comment">Accurate but Not Humble: Evaluating Epistemic Humility in LLM…</font>
+   <font color="comment">cs.AI/cs.CL · 10-08 17:25</font>
    [阅读原文](https://arxiv.org/abs/2610.12360v1)
 
 ---
