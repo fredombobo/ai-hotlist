@@ -1,0 +1,91 @@
+# ============================================================
+# AI 热点日报 — 全局配置
+# ============================================================
+# 设计原则：
+#   1. 只保留每天确实能出内容的源（GitHub / 英文媒体 / arXiv）
+#   2. score 只在「同源内」比较，跨源不做数值对比
+#   3. 简报按来源分组输出，每组独立排序
+# ============================================================
+
+# --- 输出 ---
+output:
+  html: "docs/index.html"
+  json: "docs/data.json"
+  brief: "docs/brief.txt"        # 简报预览（企业微信 markdown 长什么样）
+
+# --- 企业微信机器人（默认关闭，确认效果后再启用） ---
+wecom:
+  enabled: false
+  webhook_url: ""
+
+# --- LLM 中文提要 ---
+# api_key / base_url / model 建议通过 GitHub Secrets 注入：
+#   LLM_API_KEY / LLM_BASE_URL / LLM_MODEL
+llm:
+  enabled: true
+  base_url: "https://api.deepseek.com/v1"
+  model: "deepseek-chat"
+  api_key: ""
+  max_items: 12                  # 最多给多少条生成提要（控制成本）
+  timeout: 60
+  temperature: 0.3
+
+# --- 数据源 ---
+sources:
+  github:
+    enabled: true
+    max_items: 8
+    min_stars: 500               # 太小的仓库不值得看
+    pushed_within_days: 7        # 筛掉「老仓库偶尔 push 一次」
+    queries:
+      - "topic:llm"
+      - "topic:ai-agent"
+      - "topic:rag"
+      - "topic:generative-ai"
+      - "topic:large-language-model"
+    # 描述必须命中其一，否则丢弃（防 API 网关之类混入）
+    require_keywords:
+      ["ai", "llm", "language model", "agent", "neural", "machine learning",
+       "deep learning", "transformer", "diffusion", "rag", "embedding",
+       "inference", "fine-tun", "prompt", "gpt", "copilot", "multimodal"]
+
+  media_rss:
+    enabled: true
+    max_items: 6
+    feeds:
+      # AI 垂类源优先；泛科技源靠 AI 关键词硬校验兜底
+      - name: "TechCrunch AI"
+        url: "https://techcrunch.com/category/artificial-intelligence/feed/"
+      - name: "Hacker News AI"
+        # 用 AI 查询版，不要全站首页
+        url: "https://hnrss.org/newest?q=AI+OR+LLM+OR+%22machine+learning%22&points=50"
+      - name: "Simon Willison"
+        url: "https://simonwillison.net/atom/everything/"
+      - name: "Hugging Face Blog"
+        url: "https://huggingface.co/blog/feed.xml"
+      - name: "Google AI Blog"
+        url: "https://blog.google/technology/ai/rss/"
+
+  arxiv:
+    enabled: true
+    max_items: 4
+    categories: ["cs.AI", "cs.CL"]
+    recent_days: 2
+    # 只留「有工程价值」的论文，纯理论/纯 benchmark 降权
+    prefer_keywords: ["agent", "llm", "rag", "inference", "tool", "code", "eval"]
+    exclude_keywords: ["quantum", "protein", "weather", "biology", "medical"]
+
+# --- 过滤 ---
+filter:
+  recent_hours: 48               # 放宽到 48h，避免 arXiv 周末断档
+  max_total: 60
+  # 每个来源在「简报」里的最大展示条数
+  brief_per_source:
+    github: 3
+    media_rss: 4
+    arxiv: 2
+  # 热度权重（用于组内归一化后的加权排序）
+  source_weight:
+    github: 1.0
+    media_rss: 1.15              # 媒体解读比仓库更有信息量
+    arxiv: 0.85
