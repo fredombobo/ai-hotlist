@@ -23,6 +23,17 @@ GROUP_META = {
 }
 
 
+def _shorten(text: str, limit: int) -> str:
+    """在词边界截断英文标题，避免出现 'after la' 这种断词。"""
+    if len(text) <= limit:
+        return text
+    cut = text[:limit]
+    sp = cut.rfind(" ")
+    if sp > limit * 0.6:
+        cut = cut[:sp]
+    return cut.rstrip(" ,;:-—") + "…"
+
+
 def _fmt_time(dt) -> str:
     if not dt:
         return ""
@@ -70,7 +81,7 @@ def render_brief(groups: dict[str, list[HotItem]], total: int,
                         extra_bits.append("/".join(cats))
                 extra_bits.append(_fmt_time(it.published_at))
                 tail = " · ".join(b for b in extra_bits if b)
-                L.append(f"   <font color=\"comment\">{it.title[:70]}</font>")
+                L.append(f"   <font color=\"comment\">{_shorten(it.title, 62)}</font>")
                 if tail:
                     L.append(f"   <font color=\"comment\">{tail}</font>")
             else:
