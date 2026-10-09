@@ -1,0 +1,47 @@
+🔥 **AI 热点日报** · 10/10
+<font color="comment">值得一读 4 | 新项目 3 | 论文速览 2</font>
+
+**📰 值得一读** · 媒体解读与观点
+
+1. **The maker of non-text AI model Jev valued at $7.5B just weeks after launch**
+   <font color="comment">10-09 21:41</font>
+   [阅读原文](https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/)
+
+2. **Typesafe AI raises $870M at $7.5B**
+   <font color="comment">10-09 17:02</font>
+   [阅读原文](https://typesafe.ai/blog/series-ai)
+
+3. **Amazon drops data center NDAs, and AI agents want your credit card**
+   <font color="comment">10-09 16:53</font>
+   [阅读原文](https://techcrunch.com/podcast/amazon-drops-data-center-ndas-and-ai-agents-want-your-credit-card/)
+
+4. **We can’t help treating AI like it’s human. But should we?**
+   <font color="comment">10-09 16:40</font>
+   [阅读原文](https://techcrunch.com/2026/10/09/we-cant-help-treating-ai-like-its-human-but-should-we/)
+
+**📦 新项目** · GitHub 热门仓库
+
+1. **affaan-m/ECC**
+   <font color="comment">⭐275945 · 10-10 05:54</font>
+   [阅读原文](https://github.com/affaan-m/ECC)
+
+2. **NousResearch/hermes-agent**
+   <font color="comment">⭐252277 · 10-10 06:26</font>
+   [阅读原文](https://github.com/NousResearch/hermes-agent)
+
+3. **firecrawl/firecrawl**
+   <font color="comment">⭐189914 · 10-10 04:30</font>
+   [阅读原文](https://github.com/firecrawl/firecrawl)
+
+**📄 论文速览** · 有工程价值的论文
+
+1. **A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization**
+   <font color="comment">10-08 15:48</font>
+   [阅读原文](https://arxiv.org/abs/2610.12183v1)
+
+2. **Accurate but Not Humble: Evaluating Epistemic Humility in LLM Agents under Knowledge Conflict**
+   <font color="comment">10-08 17:25</font>
+   [阅读原文](https://arxiv.org/abs/2610.12360v1)
+
+---
+<font color="comment">完整页面 [点击查看](https://fredombobo.github.io/ai-hotlist/)</font>
