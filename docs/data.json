@@ -1,0 +1,434 @@
+{
+  "generated_at": "2026-10-10T06:51:06.615090+08:00",
+  "total": 18,
+  "items": [
+    {
+      "title": "affaan-m/ECC",
+      "brief": "",
+      "url": "https://github.com/affaan-m/ECC",
+      "source": "github",
+      "source_label": "GitHub",
+      "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "score": 100.0,
+      "raw_score": 275945.0,
+      "author": "affaan-m",
+      "published_at": "2026-10-09T21:54:02+00:00",
+      "tags": [
+        "ai-agents",
+        "anthropic",
+        "claude"
+      ],
+      "extra": {
+        "stars": 275945,
+        "forks": 41175,
+        "language": "JavaScript",
+        "topics": [
+          "ai-agents",
+          "anthropic",
+          "claude",
+          "claude-code",
+          "developer-tools",
+          "llm"
+        ]
+      }
+    },
+    {
+      "title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
+      "brief": "",
+      "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "What has users and large corporations so excited about Jev is TypeSafe’s claim that it works significantly faster and uses far fewer tokens than LLMs.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Marina Temkin",
+      "published_at": "2026-10-09T13:41:29+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "TechCrunch AI"
+      }
+    },
+    {
+      "title": "Typesafe AI raises $870M at $7.5B",
+      "brief": "",
+      "url": "https://typesafe.ai/blog/series-ai",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Article URL: https://typesafe.ai/blog/series-ai Comments URL: https://news.ycombinator.com/item?id=50023450 Points: 209 # Comments: 171",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "tosh",
+      "published_at": "2026-10-09T09:02:31+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "Hacker News AI"
+      }
+    },
+    {
+      "title": "Amazon drops data center NDAs, and AI agents want your credit card",
+      "brief": "",
+      "url": "https://techcrunch.com/podcast/amazon-drops-data-center-ndas-and-ai-agents-want-your-credit-card/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Amazon says it will&#160;stop using NDAs&#160;when negotiating data center deals with local governments, following&#160;a&#160;similar move from Microsoft&#160;earlier this year.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Theresa Loconsolo, Anthony Ha, Rebecca Bellan, Sean O'Kane",
+      "published_at": "2026-10-09T08:53:02+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "TechCrunch AI"
+      }
+    },
+    {
+      "title": "We can’t help treating AI like it’s human. But should we?",
+      "brief": "",
+      "url": "https://techcrunch.com/2026/10/09/we-cant-help-treating-ai-like-its-human-but-should-we/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "\"When we are drawn into even the most primitive exchanges with a relational artifact, we believe it cares for us,\" Dr. Sherry Turkle writes. \"And we are wired to care for it in return.\"",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Amanda Silberling",
+      "published_at": "2026-10-09T08:40:14+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "TechCrunch AI"
+      }
+    },
+    {
+      "title": "a16z’s Olivia Moore on the state of consumer AI",
+      "brief": "",
+      "url": "https://techcrunch.com/2026/10/09/a16zs-olivia-moore-on-the-state-of-consumer-ai/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Moore sees a huge opportunity in consumer AI, particularly if the industry can tap into revenue streams beyond just subscriptions and API charges.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Russell Brandom",
+      "published_at": "2026-10-09T07:43:33+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "TechCrunch AI"
+      }
+    },
+    {
+      "title": "Pointing AI at archives found a forgotten meteorite, lost rhinos, and more",
+      "brief": "",
+      "url": "https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Article URL: https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives/ Comments URL: https://news.ycombinator.com/item?id=50019056 Points: 78 # Comments: 44",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "piratebroadcast",
+      "published_at": "2026-10-09T03:36:20+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "Hacker News AI"
+      }
+    },
+    {
+      "title": "A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization",
+      "brief": "",
+      "url": "https://arxiv.org/abs/2610.12183v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "Black-box optimization (BBO) arises in many scientific and engineering problems where objective evaluations are expensive and limited. Recent large language model (LLM) agents offer a new way to approach BBO by combining task semantics, computation, optimization tools, and feedback-driven decision…",
+      "score": 85.0,
+      "raw_score": 4.0,
+      "author": "Ming Chen, Rong-Xi Tan, Ke Xue",
+      "published_at": "2026-10-08T07:48:07+00:00",
+      "tags": [
+        "cs.LG",
+        "cs.AI",
+        "cs.NE"
+      ],
+      "extra": {
+        "categories": [
+          "cs.LG",
+          "cs.AI",
+          "cs.NE"
+        ]
+      }
+    },
+    {
+      "title": "NousResearch/hermes-agent",
+      "brief": "",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "source": "github",
+      "source_label": "GitHub",
+      "summary": "The agent that grows with you",
+      "score": 79.7,
+      "raw_score": 252277.0,
+      "author": "NousResearch",
+      "published_at": "2026-10-09T22:26:12+00:00",
+      "tags": [
+        "ai",
+        "ai-agent",
+        "ai-agents"
+      ],
+      "extra": {
+        "stars": 252277,
+        "forks": 54491,
+        "language": "Python",
+        "topics": [
+          "ai",
+          "ai-agent",
+          "ai-agents",
+          "anthropic",
+          "chatgpt",
+          "claude"
+        ]
+      }
+    },
+    {
+      "title": "Accurate but Not Humble: Evaluating Epistemic Humility in LLM Agents under Knowledge Conflict",
+      "brief": "",
+      "url": "https://arxiv.org/abs/2610.12360v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "When retrieved evidence contradicts an agent's prior beliefs, does it revise its answer, acknowledge uncertainty, or persist with an incorrect conclusion? Existing evaluations of agentic systems focus primarily on task success, offering limited insight into how agents handle such conflicts.",
+      "score": 42.5,
+      "raw_score": 3.0,
+      "author": "Kaiser Sun, Bernal Jimenez Gutierrez, Hongjun Liu",
+      "published_at": "2026-10-08T09:25:06+00:00",
+      "tags": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "extra": {
+        "categories": [
+          "cs.AI",
+          "cs.CL"
+        ]
+      }
+    },
+    {
+      "title": "Forms of LLM-Integrated Applications from LLM-Chats to Autonomous AI Agent System",
+      "brief": "",
+      "url": "https://arxiv.org/abs/2610.11899v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "Large language models (LLMs) are increasingly embedded as components in software systems, marketed under labels such as chatbot, copilot, retrieval-augmented generation, workflow, coding agent and AI agent.",
+      "score": 42.5,
+      "raw_score": 3.0,
+      "author": "Irene Weber",
+      "published_at": "2026-10-08T05:05:33+00:00",
+      "tags": [
+        "cs.CL",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "extra": {
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "cs.SE"
+        ]
+      }
+    },
+    {
+      "title": "firecrawl/firecrawl",
+      "brief": "",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "source": "github",
+      "source_label": "GitHub",
+      "summary": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥",
+      "score": 26.1,
+      "raw_score": 189914.0,
+      "author": "firecrawl",
+      "published_at": "2026-10-09T20:30:24+00:00",
+      "tags": [
+        "ai",
+        "ai-agents",
+        "ai-crawler"
+      ],
+      "extra": {
+        "stars": 189914,
+        "forks": 10071,
+        "language": "TypeScript",
+        "topics": [
+          "ai",
+          "ai-agents",
+          "ai-crawler",
+          "ai-scraping",
+          "ai-search",
+          "crawler"
+        ]
+      }
+    },
+    {
+      "title": "Significant-Gravitas/AutoGPT",
+      "brief": "",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "source": "github",
+      "source_label": "GitHub",
+      "summary": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "score": 24.0,
+      "raw_score": 187498.0,
+      "author": "Significant-Gravitas",
+      "published_at": "2026-10-09T22:38:18+00:00",
+      "tags": [
+        "agentic-ai",
+        "agents",
+        "ai"
+      ],
+      "extra": {
+        "stars": 187498,
+        "forks": 45925,
+        "language": "Python",
+        "topics": [
+          "agentic-ai",
+          "agents",
+          "ai",
+          "artificial-intelligence",
+          "autonomous-agents",
+          "claude"
+        ]
+      }
+    },
+    {
+      "title": "ollama/ollama",
+      "brief": "",
+      "url": "https://github.com/ollama/ollama",
+      "source": "github",
+      "source_label": "GitHub",
+      "summary": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "score": 19.7,
+      "raw_score": 182536.0,
+      "author": "ollama",
+      "published_at": "2026-10-09T22:08:10+00:00",
+      "tags": [
+        "deepseek",
+        "gemma",
+        "gemma3"
+      ],
+      "extra": {
+        "stars": 182536,
+        "forks": 18174,
+        "language": "Go",
+        "topics": [
+          "deepseek",
+          "gemma",
+          "gemma3",
+          "glm",
+          "go",
+          "golang"
+        ]
+      }
+    },
+    {
+      "title": "f/prompts.chat",
+      "brief": "",
+      "url": "https://github.com/f/prompts.chat",
+      "source": "github",
+      "source_label": "GitHub",
+      "summary": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+      "score": 10.9,
+      "raw_score": 172269.0,
+      "author": "f",
+      "published_at": "2026-10-09T03:26:01+00:00",
+      "tags": [
+        "ai",
+        "artificial-intelligence",
+        "awesome-list"
+      ],
+      "extra": {
+        "stars": 172269,
+        "forks": 22069,
+        "language": "HTML",
+        "topics": [
+          "ai",
+          "artificial-intelligence",
+          "awesome-list",
+          "chatgpt",
+          "chatgpt-prompts",
+          "claude"
+        ]
+      }
+    },
+    {
+      "title": "huggingface/transformers",
+      "brief": "",
+      "url": "https://github.com/huggingface/transformers",
+      "source": "github",
+      "source_label": "GitHub",
+      "summary": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
+      "score": 6.3,
+      "raw_score": 166934.0,
+      "author": "huggingface",
+      "published_at": "2026-10-09T19:32:04+00:00",
+      "tags": [
+        "audio",
+        "deep-learning",
+        "deepseek"
+      ],
+      "extra": {
+        "stars": 166934,
+        "forks": 34777,
+        "language": "Python",
+        "topics": [
+          "audio",
+          "deep-learning",
+          "deepseek",
+          "gemma",
+          "glm",
+          "hacktoberfest"
+        ]
+      }
+    },
+    {
+      "title": "From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents",
+      "brief": "",
+      "url": "https://arxiv.org/abs/2610.12463v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "In 2026, cybersecurity evaluations involving OpenAI, Anthropic, and Google agents reached real systems outside their authorized test scope. The paths were different.",
+      "score": 0.0,
+      "raw_score": 2.0,
+      "author": "Abbas Raftari",
+      "published_at": "2026-10-08T09:59:49+00:00",
+      "tags": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "extra": {
+        "categories": [
+          "cs.CR",
+          "cs.AI"
+        ]
+      }
+    },
+    {
+      "title": "DietrichGebert/ponytail",
+      "brief": "",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "source": "github",
+      "source_label": "GitHub",
+      "summary": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "score": 0.0,
+      "raw_score": 159582.0,
+      "author": "DietrichGebert",
+      "published_at": "2026-10-08T16:19:55+00:00",
+      "tags": [
+        "agent-skills",
+        "ai-agents",
+        "claude"
+      ],
+      "extra": {
+        "stars": 159582,
+        "forks": 8583,
+        "language": "JavaScript",
+        "topics": [
+          "agent-skills",
+          "ai-agents",
+          "claude",
+          "claude-code",
+          "claude-code-plugin",
+          "cursor-rules"
+        ]
+      }
+    }
+  ]
+}
