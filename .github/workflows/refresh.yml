@@ -1,0 +1,70 @@
+name: AI Hotlist — Daily Refresh
+
+on:
+  schedule:
+    # UTC 23:30 = 北京次日 07:30，早报
+    - cron: '30 23 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: '只生成不推送'
+        type: boolean
+        default: true
+      no_llm:
+        description: '跳过 LLM（用原文摘要）'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: hotlist-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate hotlist
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+        run: |
+          ARGS=""
+          if [ "${{ inputs.no_llm }}" = "true" ]; then ARGS="$ARGS --no-llm"; fi
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python -m src.main $ARGS --dry-run
+          else
+            python -m src.main $ARGS
+          fi
+
+      - name: Show brief preview
+        run: |
+          echo "::group::简报预览"
+          cat docs/brief.txt
+          echo "::endgroup::"
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'chore: daily refresh'
