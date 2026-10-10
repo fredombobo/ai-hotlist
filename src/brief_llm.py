@@ -72,7 +72,10 @@ def _parse_response(text: str, n: int) -> list[str]:
 
 
 def generate_briefs(cfg: dict, items: list[HotItem]) -> list[HotItem]:
-    """为 items 生成中文提要，就地写入 item.brief。失败时静默降级。"""
+    """为 items 生成中文提要，就地写入 item.brief。失败时静默降级。
+
+    分批处理：一次请求最多 BATCH 条，避免单次输出过长导致 LLM 漏条目。
+    """
     llm = cfg.get("llm", {})
     if not llm.get("enabled", False):
         return items
@@ -85,38 +88,40 @@ def generate_briefs(cfg: dict, items: list[HotItem]) -> list[HotItem]:
 
     base = (llm.get("base_url") or "https://api.deepseek.com/v1").rstrip("/")
     model = llm.get("model", "deepseek-chat")
+    BATCH = 6
+    ok_total = 0
 
-    batch = items[: int(llm.get("max_items", 12))]
-    payload = {
-        "model": model,
-        "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": _build_user_prompt(batch)},
-        ],
-        "temperature": llm.get("temperature", 0.3),
-        "max_tokens": 1600,
-    }
-    headers = {
-        "Authorization": f"Bearer {api_key}",
-        "Content-Type": "application/json",
-    }
+    for start in range(0, len(items), BATCH):
+        batch = items[start:start + BATCH]
+        payload = {
+            "model": model,
+            "messages": [
+                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "user", "content": _build_user_prompt(batch)},
+            ],
+            "temperature": llm.get("temperature", 0.3),
+            "max_tokens": 1200,
+        }
+        headers = {
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        }
+        try:
+            sess = requests.Session()
+            sess.trust_env = False     # 避开本机代理
+            r = sess.post(f"{base}/chat/completions", json=payload,
+                          headers=headers, timeout=llm.get("timeout", 60))
+            r.raise_for_status()
+            content = r.json()["choices"][0]["message"]["content"]
+            briefs = _parse_response(content, len(batch))
+            for it, b in zip(batch, briefs):
+                if b and len(b) <= 80:
+                    it.brief = b
+                    ok_total += 1
+        except Exception as e:
+            print(f"  ✗ LLM 批次 {start // BATCH + 1} 失败: {str(e)[:110]}", flush=True)
 
-    try:
-        sess = requests.Session()
-        sess.trust_env = False     # 避开本机代理
-        r = sess.post(f"{base}/chat/completions", json=payload,
-                      headers=headers, timeout=llm.get("timeout", 60))
-        r.raise_for_status()
-        content = r.json()["choices"][0]["message"]["content"]
-        briefs = _parse_response(content, len(batch))
-        ok = 0
-        for it, b in zip(batch, briefs):
-            if b and len(b) <= 80:
-                it.brief = b
-                ok += 1
-        print(f"  ✓ LLM: {ok}/{len(batch)} 条提要生成成功", flush=True)
-    except Exception as e:
-        print(f"  ✗ LLM 调用失败（降级为原文摘要）: {str(e)[:120]}", flush=True)
+    print(f"  ✓ LLM: {ok_total}/{len(items)} 条提要生成成功", flush=True)
 
     # 降级兜底：没有 brief 的用清洗后的原文摘要
     for it in items:
