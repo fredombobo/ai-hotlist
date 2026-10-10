@@ -72,10 +72,9 @@ def collect(cfg: dict) -> list[HotItem]:
                 if datetime.now(timezone.utc) - published > timedelta(days=recent_days):
                     continue
 
-            # 相关性打分：命中 prefer 关键词的数量
+            # 相关性打分：命中 prefer 关键词的数量（命中多者优先排序）
+            # 注意：不命中不再直接丢弃 —— 否则周末/冷门方向会导致整组为空
             hits = sum(1 for k in prefer if k in text)
-            if prefer and hits == 0:
-                continue
 
             seen.add(aid)
             items.append(HotItem(
@@ -84,7 +83,7 @@ def collect(cfg: dict) -> list[HotItem]:
                 source="arxiv",
                 source_label=SOURCE_LABEL,
                 summary=summary,
-                raw_score=float(hits),
+                raw_score=float(hits) + 1.0,   # +1 保证未命中的也有基础分
                 author=", ".join(
                     a.get("name", "") for a in entry.get("authors", [])[:3]
                 ),
