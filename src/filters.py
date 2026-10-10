@@ -161,14 +161,33 @@ class HotFilter:
 
     # ------------------------------------------------ 简报刊选
     def pick_for_brief(self, items: list[HotItem]) -> dict[str, list[HotItem]]:
-        """按来源挑选进入简报的条目，每组独立排序。"""
-        out: dict[str, list[HotItem]] = {}
+        """按来源挑选进入简报的条目，每组独立排序。
+
+        补位逻辑：某源当天无内容（arXiv 周末常见），
+        把空出的名额从其他组的候补里按热度补上，保证总数达标。
+        """
         order = ["media_rss", "github", "arxiv"]
+        total_quota = sum(self.brief_per_source.get(s, 0) for s in order)
+
+        out: dict[str, list[HotItem]] = {}
+        surplus: list[HotItem] = []      # 各组「配额之外」的候补
+
         for src in order:
-            group = [x for x in items if x.source == src]
-            n = self.brief_per_source.get(src, 3)
+            group = sorted([x for x in items if x.source == src],
+                           key=lambda x: x.score, reverse=True)
+            n = self.brief_per_source.get(src, 0)
             if group:
                 out[src] = group[:n]
+            if len(group) > n:
+                surplus.extend(group[n:])
+
+        # 补位：把各组多出来的候补按热度补进未满的组
+        deficit = total_quota - sum(len(v) for v in out.values())
+        if deficit > 0 and surplus:
+            surplus.sort(key=lambda x: x.score, reverse=True)
+            for it in surplus[:deficit]:
+                out.setdefault(it.source, []).append(it)
+
         return out
 
 
