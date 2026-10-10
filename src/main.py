@@ -88,13 +88,20 @@ def main():
     brief_text = render_brief(groups, len(filtered))
     generate(cfg, groups, filtered, brief_text)
 
-    # ---- 推送（默认关闭）----
+    # ---- 推送 ----
     wecom = cfg.get("wecom", {})
-    if not dry_run and wecom.get("enabled") and wecom.get("webhook_url"):
-        push(cfg, brief_text)
-        print("  ✓ 已推送企业微信", flush=True)
-    else:
+    if dry_run:
+        print("  - 推送已跳过（--dry-run）", flush=True)
+    elif not wecom.get("enabled"):
         print("  - 推送已跳过（wecom.enabled=false）", flush=True)
+    elif not wecom.get("webhook_url"):
+        print("  ! 推送跳过：wecom.enabled=true 但未提供 WECOM_WEBHOOK_KEY", flush=True)
+    else:
+        if push(cfg, brief_text):
+            print("  ✓ 已推送企业微信", flush=True)
+        else:
+            print("  ✗ 推送失败（webhook 返回错误）", flush=True)
+            sys.exit(1)     # 让 CI 显式失败，避免静默漏推
 
     print(f"\n✅ 完成：{len(all_items)} 条原始 → {len(filtered)} 条入选 → "
           f"简报展示 {len(brief_items)} 条", flush=True)
