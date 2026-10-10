@@ -83,11 +83,11 @@ filter:
   # 各源的实际时效由各自 collector 的参数控制（arxiv.recent_days / github.pushed_within_days）
   recent_hours: 96
   max_total: 60
-  # 每个来源在「简报」里的最大展示条数
+  # 每个来源在「简报」里的最大展示条数（合计 6 条）
   brief_per_source:
-    github: 3
-    media_rss: 4
-    arxiv: 2
+    github: 2
+    media_rss: 3
+    arxiv: 1
   # 热度权重（用于组内归一化后的加权排序）
   source_weight:
     github: 1.0
