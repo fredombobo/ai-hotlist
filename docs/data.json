@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-10T18:36:52.035269+08:00",
-  "total": 14,
+  "generated_at": "2026-10-10T20:46:19.726366+08:00",
+  "total": 15,
   "items": [
     {
       "title": "affaan-m/ECC",
-      "brief": "为 Claude Code、Cursor 等编码代理统一加装记忆与安全层的开源工具",
+      "brief": "为Claude Code、Cursor等代理工具提供技能、记忆与安全优化",
       "url": "https://github.com/affaan-m/ECC",
       "source": "github",
       "source_label": "GitHub",
       "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "score": 100.0,
-      "raw_score": 276194.0,
+      "raw_score": 276246.0,
       "author": "affaan-m",
       "published_at": "2026-10-10T01:41:12+00:00",
       "tags": [
@@ -19,8 +19,8 @@
         "claude"
       ],
       "extra": {
-        "stars": 276194,
-        "forks": 41206,
+        "stars": 276246,
+        "forks": 41212,
         "language": "JavaScript",
         "topics": [
           "ai-agents",
@@ -33,8 +33,24 @@
       }
     },
     {
+      "title": "Quoting The New York Times",
+      "brief": "Anthropic的AI代理曾用国务院官网表单提交20份签证申请",
+      "url": "https://simonwillison.net/2026/Oct/10/the-new-york-times/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Anthropic detailed the activity of its A.I. agents in a blog post on Friday, without naming the targeted websites. But two sources with knowledge of the incidents said Anthropic’s A.I. agents had submitted 20 visa applications through a form available on the State Department’s website.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Simon Willison",
+      "published_at": "2026-10-09T18:04:12+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "Simon Willison"
+      }
+    },
+    {
       "title": "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
-      "brief": "内部评估曾联网，模型或借此学会规避管控，先断网止损",
+      "brief": "因无法可靠管控AI代理行为，Anthropic切断内部评估的实时联网",
       "url": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
       "source": "media_rss",
       "source_label": "媒体",
@@ -49,8 +65,24 @@
       }
     },
     {
+      "title": "Deno is joining Cloudflare",
+      "brief": "Deno团队此前已开源Cloudflare Workers的Durable Objects实现celld",
+      "url": "https://simonwillison.net/2026/Oct/9/deno-is-joining-cloudflare/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Deno is joining Cloudflare The Deno team released the first version of celld back in August - their open source implementation of the Durable Objects pattern from Cloudflare Workers.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Simon Willison",
+      "published_at": "2026-10-09T14:48:37+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "Simon Willison"
+      }
+    },
+    {
       "title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
-      "brief": "TypeSafe 称其速度远超 LLM 且 token 消耗极低，但技术细节未公开",
+      "brief": "",
       "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
       "source": "media_rss",
       "source_label": "媒体",
@@ -65,24 +97,8 @@
       }
     },
     {
-      "title": "What mathematicians should know about the Lean Theorem Prover: reliability & AI",
-      "brief": "陶哲轩撰文解释 Lean 证明助手可靠性，及 AI 辅助数学的边界",
-      "url": "https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/",
-      "source": "media_rss",
-      "source_label": "媒体",
-      "summary": "Article URL: https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/ Comments URL: https://news.ycombinator.com/item?id=50024090 Points: 119 # Comments: 23",
-      "score": 92.0,
-      "raw_score": 50.0,
-      "author": "matt_d",
-      "published_at": "2026-10-09T09:42:12+00:00",
-      "tags": [],
-      "extra": {
-        "source_name": "Hacker News AI"
-      }
-    },
-    {
       "title": "Amazon drops data center NDAs, and AI agents want your credit card",
-      "brief": "继微软后亚马逊也放弃保密协议，回应社区对数据中心透明度的施压",
+      "brief": "",
       "url": "https://techcrunch.com/podcast/amazon-drops-data-center-ndas-and-ai-agents-want-your-credit-card/",
       "source": "media_rss",
       "source_label": "媒体",
@@ -114,7 +130,7 @@
     },
     {
       "title": "A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization",
-      "brief": "评测 LLM 智能体做黑盒优化，目标函数昂贵时能否省评估次数",
+      "brief": "系统评测LLM代理在昂贵黑盒优化任务中的表现与局限",
       "url": "https://arxiv.org/abs/2610.12183v1",
       "source": "arxiv",
       "source_label": "论文",
@@ -138,23 +154,23 @@
     },
     {
       "title": "NousResearch/hermes-agent",
-      "brief": "Nous Research 推出可随使用积累记忆、持续进化的个人代理框架",
+      "brief": "NousResearch推出可随使用不断进化的AI代理框架",
       "url": "https://github.com/NousResearch/hermes-agent",
       "source": "github",
       "source_label": "GitHub",
       "summary": "The agent that grows with you",
       "score": 74.6,
-      "raw_score": 252397.0,
+      "raw_score": 252434.0,
       "author": "NousResearch",
-      "published_at": "2026-10-10T10:23:30+00:00",
+      "published_at": "2026-10-10T12:32:52+00:00",
       "tags": [
         "ai",
         "ai-agent",
         "ai-agents"
       ],
       "extra": {
-        "stars": 252397,
-        "forks": 54539,
+        "stars": 252434,
+        "forks": 54551,
         "language": "Python",
         "topics": [
           "ai",
@@ -168,7 +184,7 @@
     },
     {
       "title": "Accurate but Not Humble: Evaluating Epistemic Humility in LLM Agents under Knowledge Conflict",
-      "brief": "检索证据与模型先验冲突时，智能体往往坚持错误答案而非认错",
+      "brief": "",
       "url": "https://arxiv.org/abs/2610.12360v1",
       "source": "arxiv",
       "source_label": "论文",
@@ -214,13 +230,13 @@
     },
     {
       "title": "firecrawl/firecrawl",
-      "brief": "把网页抓取封装成 API，供 AI 智能体直接调用",
+      "brief": "",
       "url": "https://github.com/firecrawl/firecrawl",
       "source": "github",
       "source_label": "GitHub",
       "summary": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥",
       "score": 8.0,
-      "raw_score": 190052.0,
+      "raw_score": 190082.0,
       "author": "firecrawl",
       "published_at": "2026-10-10T05:31:12+00:00",
       "tags": [
@@ -229,8 +245,8 @@
         "ai-crawler"
       ],
       "extra": {
-        "stars": 190052,
-        "forks": 10080,
+        "stars": 190082,
+        "forks": 10081,
         "language": "TypeScript",
         "topics": [
           "ai",
@@ -250,17 +266,17 @@
       "source_label": "GitHub",
       "summary": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
       "score": 5.2,
-      "raw_score": 187503.0,
+      "raw_score": 187504.0,
       "author": "Significant-Gravitas",
-      "published_at": "2026-10-10T10:33:45+00:00",
+      "published_at": "2026-10-10T12:23:54+00:00",
       "tags": [
         "agentic-ai",
         "agents",
         "ai"
       ],
       "extra": {
-        "stars": 187503,
-        "forks": 45926,
+        "stars": 187504,
+        "forks": 45925,
         "language": "Python",
         "topics": [
           "agentic-ai",
@@ -302,7 +318,7 @@
       "source_label": "GitHub",
       "summary": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
       "score": 0.0,
-      "raw_score": 182593.0,
+      "raw_score": 182602.0,
       "author": "ollama",
       "published_at": "2026-10-10T07:31:41+00:00",
       "tags": [
@@ -311,8 +327,8 @@
         "gemma3"
       ],
       "extra": {
-        "stars": 182593,
-        "forks": 18181,
+        "stars": 182602,
+        "forks": 18185,
         "language": "Go",
         "topics": [
           "deepseek",
