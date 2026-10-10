@@ -238,6 +238,15 @@ def collect(cfg: dict) -> list[HotItem]:
                 },
             ))
 
-    items.sort(key=lambda x: x.raw_score, reverse=True)
+    # 排序：star 量级 + 近期活跃度。
+    # 纯 star 排序会让头部大仓长期霸榜（AutoGPT 之类），
+    # 加一个「最近 24h 内有 push」的加权，让正在迭代的项目上浮。
+    def _rank(it: HotItem) -> float:
+        age_h = it.age_hours
+        # 24h 内 push 的加 35%，7 天内线性衰减到 1.0
+        freshness = 1.35 if age_h <= 24 else max(1.0, 1.35 - (age_h - 24) / 168 * 0.35)
+        return it.raw_score * freshness
+
+    items.sort(key=_rank, reverse=True)
     print(f"      GitHub：{len(items)} 条候选", flush=True)
     return items[:max_items]
