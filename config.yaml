@@ -35,8 +35,8 @@ llm:
 sources:
   github:
     enabled: true
-    max_items: 8
-    min_stars: 500               # 太小的仓库不值得看
+    max_items: 5
+    min_stars: 3000              # 太小的仓库不值得看
     pushed_within_days: 7        # 筛掉「老仓库偶尔 push 一次」
     queries:
       - "topic:llm"
@@ -79,7 +79,9 @@ sources:
 
 # --- 过滤 ---
 filter:
-  recent_hours: 48               # 放宽到 48h，避免 arXiv 周末断档
+  # 全局时效窗口。注意：arXiv 周末不提交论文，48h 会导致周一周二整组消失。
+  # 各源的实际时效由各自 collector 的参数控制（arxiv.recent_days / github.pushed_within_days）
+  recent_hours: 96
   max_total: 60
   # 每个来源在「简报」里的最大展示条数
   brief_per_source:
