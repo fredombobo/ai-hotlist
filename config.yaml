@@ -71,8 +71,9 @@ sources:
     enabled: true
     max_items: 4
     categories: ["cs.AI", "cs.CL"]
-    recent_days: 2
-    # 只留「有工程价值」的论文，纯理论/纯 benchmark 降权
+    # arXiv 周末不提交新论文，窗口太窄会导致周一周二断档
+    recent_days: 4
+    # 命中则优先；全都不命中时不再直接丢弃（避免周末空组）
     prefer_keywords: ["agent", "llm", "rag", "inference", "tool", "code", "eval"]
     exclude_keywords: ["quantum", "protein", "weather", "biology", "medical"]
 
