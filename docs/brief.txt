@@ -1,56 +1,41 @@
 🔥 **AI 热点日报** · 10/10
-<font color="comment">值得一读 4 | 新项目 3 | 论文速览 2</font>
+<font color="comment">值得一读 3 | 新项目 2 | 论文速览 1</font>
 
 **📰 值得一读** · 媒体解读与观点
 
-1. **内部评估曾联网，模型或借此学会规避管控，先断网止损**
+1. **Anthropic的AI代理曾用国务院官网表单提交20份签证申请**
+   <font color="comment">Quoting The New York Times</font>
+   <font color="comment">Simon Willison · 10-10 02:04</font>
+   [阅读原文](https://simonwillison.net/2026/Oct/10/the-new-york-times/)
+
+2. **因无法可靠管控AI代理行为，Anthropic切断内部评估的实时联网**
    <font color="comment">Anthropic can’t reliably control its AI agents. It’s cutting…</font>
    <font color="comment">TechCrunch AI · 10-10 00:18</font>
    [阅读原文](https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/)
 
-2. **TypeSafe 称其速度远超 LLM 且 token 消耗极低，但技术细节未公开**
-   <font color="comment">The maker of non-text AI model Jev valued at $7.5B just weeks…</font>
-   <font color="comment">TechCrunch AI · 10-09 21:41</font>
-   [阅读原文](https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/)
-
-3. **陶哲轩撰文解释 Lean 证明助手可靠性，及 AI 辅助数学的边界**
-   <font color="comment">What mathematicians should know about the Lean Theorem…</font>
-   <font color="comment">Hacker News AI · 10-09 17:42</font>
-   [阅读原文](https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/)
-
-4. **继微软后亚马逊也放弃保密协议，回应社区对数据中心透明度的施压**
-   <font color="comment">Amazon drops data center NDAs, and AI agents want your credit…</font>
-   <font color="comment">TechCrunch AI · 10-09 16:53</font>
-   [阅读原文](https://techcrunch.com/podcast/amazon-drops-data-center-ndas-and-ai-agents-want-your-credit-card/)
+3. **Deno团队此前已开源Cloudflare Workers的Durable Objects实现celld**
+   <font color="comment">Deno is joining Cloudflare</font>
+   <font color="comment">Simon Willison · 10-09 22:48</font>
+   [阅读原文](https://simonwillison.net/2026/Oct/9/deno-is-joining-cloudflare/)
 
 **📦 新项目** · GitHub 热门仓库
 
-1. **为 Claude Code、Cursor 等编码代理统一加装记忆与安全层的开源工具**
+1. **为Claude Code、Cursor等代理工具提供技能、记忆与安全优化**
    <font color="comment">affaan-m/ECC</font>
-   <font color="comment">⭐276194 · JavaScript · 10-10 09:41</font>
+   <font color="comment">⭐276246 · JavaScript · 10-10 09:41</font>
    [阅读原文](https://github.com/affaan-m/ECC)
 
-2. **Nous Research 推出可随使用积累记忆、持续进化的个人代理框架**
+2. **NousResearch推出可随使用不断进化的AI代理框架**
    <font color="comment">NousResearch/hermes-agent</font>
-   <font color="comment">⭐252397 · Python · 10-10 18:23</font>
+   <font color="comment">⭐252434 · Python · 10-10 20:32</font>
    [阅读原文](https://github.com/NousResearch/hermes-agent)
-
-3. **把网页抓取封装成 API，供 AI 智能体直接调用**
-   <font color="comment">firecrawl/firecrawl</font>
-   <font color="comment">⭐190052 · TypeScript · 10-10 13:31</font>
-   [阅读原文](https://github.com/firecrawl/firecrawl)
 
 **📄 论文速览** · 有工程价值的论文
 
-1. **评测 LLM 智能体做黑盒优化，目标函数昂贵时能否省评估次数**
+1. **系统评测LLM代理在昂贵黑盒优化任务中的表现与局限**
    <font color="comment">A Closer Look at Agentic BBO: Benchmarking LLM Agents for…</font>
    <font color="comment">cs.LG/cs.AI · 10-08 15:48</font>
    [阅读原文](https://arxiv.org/abs/2610.12183v1)
-
-2. **检索证据与模型先验冲突时，智能体往往坚持错误答案而非认错**
-   <font color="comment">Accurate but Not Humble: Evaluating Epistemic Humility in LLM…</font>
-   <font color="comment">cs.AI/cs.CL · 10-08 17:25</font>
-   [阅读原文](https://arxiv.org/abs/2610.12360v1)
 
 ---
 <font color="comment">完整页面 [点击查看](https://fredombobo.github.io/ai-hotlist/)</font>
