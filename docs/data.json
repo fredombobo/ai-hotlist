@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-10-10T06:52:43.341801+08:00",
+  "generated_at": "2026-10-10T06:59:02.276195+08:00",
   "total": 18,
   "items": [
     {
       "title": "affaan-m/ECC",
-      "brief": "给 Claude Code、Cursor 等 agent 加技能、记忆和安全层的优化框架。",
+      "brief": "为 Claude Code、Cursor 等编码代理提供技能、记忆与安全层的性能优化框架。",
       "url": "https://github.com/affaan-m/ECC",
       "source": "github",
       "source_label": "GitHub",
       "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "score": 100.0,
-      "raw_score": 275945.0,
+      "raw_score": 275946.0,
       "author": "affaan-m",
-      "published_at": "2026-10-09T21:54:02+00:00",
+      "published_at": "2026-10-09T22:55:02+00:00",
       "tags": [
         "ai-agents",
         "anthropic",
         "claude"
       ],
       "extra": {
-        "stars": 275945,
+        "stars": 275946,
         "forks": 41175,
         "language": "JavaScript",
         "topics": [
@@ -34,7 +34,7 @@
     },
     {
       "title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
-      "brief": "非文本模型 Jev 用更少 token 跑更快，几周内估值冲到 75 亿美元。",
+      "brief": "非文本模型 Jev 号称比 LLM 快得多、token 消耗更低，发布数周即达 75 亿美元估值。",
       "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
       "source": "media_rss",
       "source_label": "媒体",
@@ -50,11 +50,11 @@
     },
     {
       "title": "Typesafe AI raises $870M at $7.5B",
-      "brief": "TypeSafe 靠非文本架构拿下 8.7 亿美元融资，挑战 LLM 主流路线。",
+      "brief": "TypeSafe 靠非文本 AI 路线拿下 8.7 亿美元融资，投资方押注其绕开 LLM 架构。",
       "url": "https://typesafe.ai/blog/series-ai",
       "source": "media_rss",
       "source_label": "媒体",
-      "summary": "Article URL: https://typesafe.ai/blog/series-ai Comments URL: https://news.ycombinator.com/item?id=50023450 Points: 209 # Comments: 171",
+      "summary": "Article URL: https://typesafe.ai/blog/series-ai Comments URL: https://news.ycombinator.com/item?id=50023450 Points: 214 # Comments: 181",
       "score": 92.0,
       "raw_score": 50.0,
       "author": "tosh",
@@ -82,7 +82,7 @@
     },
     {
       "title": "We can’t help treating AI like it’s human. But should we?",
-      "brief": "Turkle 指出人天生会对 AI 产生情感回馈，这种本能可能被利用。",
+      "brief": "MIT 教授 Turkle 指出人类天生会对 AI 产生情感回馈，这种本能可能被利用。",
       "url": "https://techcrunch.com/2026/10/09/we-cant-help-treating-ai-like-its-human-but-should-we/",
       "source": "media_rss",
       "source_label": "媒体",
@@ -118,7 +118,7 @@
       "url": "https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives/",
       "source": "media_rss",
       "source_label": "媒体",
-      "summary": "Article URL: https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives/ Comments URL: https://news.ycombinator.com/item?id=50019056 Points: 78 # Comments: 44",
+      "summary": "Article URL: https://jessewaites.com/blog/post/i-pointed-ai-at-400-years-of-archives/ Comments URL: https://news.ycombinator.com/item?id=50019056 Points: 84 # Comments: 44",
       "score": 92.0,
       "raw_score": 50.0,
       "author": "piratebroadcast",
@@ -130,7 +130,7 @@
     },
     {
       "title": "A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization",
-      "brief": "系统评测 LLM agent 做黑盒优化的能力，这类场景评估成本极高。",
+      "brief": "首次系统评测LLM代理做黑盒优化的能力，目标函数昂贵场景。",
       "url": "https://arxiv.org/abs/2610.12183v1",
       "source": "arxiv",
       "source_label": "论文",
@@ -154,13 +154,13 @@
     },
     {
       "title": "NousResearch/hermes-agent",
-      "brief": "NousResearch 推出可随使用逐步成长的 agent，主打长期记忆演化。",
+      "brief": "NousResearch 推出可随用户使用不断积累记忆与能力的自进化代理。",
       "url": "https://github.com/NousResearch/hermes-agent",
       "source": "github",
       "source_label": "GitHub",
       "summary": "The agent that grows with you",
       "score": 79.7,
-      "raw_score": 252277.0,
+      "raw_score": 252278.0,
       "author": "NousResearch",
       "published_at": "2026-10-09T22:26:12+00:00",
       "tags": [
@@ -169,7 +169,7 @@
         "ai-agents"
       ],
       "extra": {
-        "stars": 252277,
+        "stars": 252278,
         "forks": 54491,
         "language": "Python",
         "topics": [
@@ -184,7 +184,7 @@
     },
     {
       "title": "Accurate but Not Humble: Evaluating Epistemic Humility in LLM Agents under Knowledge Conflict",
-      "brief": "测试 agent 遇到证据与自身判断冲突时，是否承认不确定还是硬撑。",
+      "brief": "检索证据与模型先验冲突时，代理往往坚持错误答案而非认错。",
       "url": "https://arxiv.org/abs/2610.12360v1",
       "source": "arxiv",
       "source_label": "论文",
@@ -230,13 +230,13 @@
     },
     {
       "title": "firecrawl/firecrawl",
-      "brief": "为 AI agent 提供网页抓取与数据接入的开源库，定位超智能基础设施。",
+      "brief": "把网页抓取封装成API，让AI代理直接调用实时网络数据。",
       "url": "https://github.com/firecrawl/firecrawl",
       "source": "github",
       "source_label": "GitHub",
       "summary": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥",
       "score": 26.1,
-      "raw_score": 189914.0,
+      "raw_score": 189915.0,
       "author": "firecrawl",
       "published_at": "2026-10-09T20:30:24+00:00",
       "tags": [
@@ -245,8 +245,8 @@
         "ai-crawler"
       ],
       "extra": {
-        "stars": 189914,
-        "forks": 10071,
+        "stars": 189915,
+        "forks": 10072,
         "language": "TypeScript",
         "topics": [
           "ai",
@@ -326,7 +326,7 @@
       "source_label": "GitHub",
       "summary": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
       "score": 10.9,
-      "raw_score": 172269.0,
+      "raw_score": 172270.0,
       "author": "f",
       "published_at": "2026-10-09T03:26:01+00:00",
       "tags": [
@@ -335,7 +335,7 @@
         "awesome-list"
       ],
       "extra": {
-        "stars": 172269,
+        "stars": 172270,
         "forks": 22069,
         "language": "HTML",
         "topics": [
@@ -356,7 +356,7 @@
       "source_label": "GitHub",
       "summary": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
       "score": 6.3,
-      "raw_score": 166934.0,
+      "raw_score": 166935.0,
       "author": "huggingface",
       "published_at": "2026-10-09T19:32:04+00:00",
       "tags": [
@@ -365,7 +365,7 @@
         "deepseek"
       ],
       "extra": {
-        "stars": 166934,
+        "stars": 166935,
         "forks": 34778,
         "language": "Python",
         "topics": [
@@ -408,7 +408,7 @@
       "source_label": "GitHub",
       "summary": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "score": 0.0,
-      "raw_score": 159583.0,
+      "raw_score": 159591.0,
       "author": "DietrichGebert",
       "published_at": "2026-10-08T16:19:55+00:00",
       "tags": [
@@ -417,8 +417,8 @@
         "claude"
       ],
       "extra": {
-        "stars": 159583,
-        "forks": 8583,
+        "stars": 159591,
+        "forks": 8584,
         "language": "JavaScript",
         "topics": [
           "agent-skills",
