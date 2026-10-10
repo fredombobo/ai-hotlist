@@ -7,6 +7,7 @@
 """
 from __future__ import annotations
 
+import re
 from datetime import datetime, timezone, timedelta
 
 from src.models import HotItem
@@ -38,18 +39,88 @@ class HotFilter:
 
     # ------------------------------------------------ 去重
     def deduplicate(self, items: list[HotItem]) -> list[HotItem]:
+        """三层去重：
+        1. URL / 标题精确匹配
+        2. 「金额+主体」指纹 —— 同一事件的融资/收购报道，
+           不同媒体标题措辞差异大但共享核心数字与公司名
+        3. 标题词集 Jaccard 相似度 —— 捕获改写标题
+        """
         seen_urls: set[str] = set()
         seen_titles: set[str] = set()
+        seen_fingerprints: set[str] = set()
+        kept_tokens: list[set[str]] = []
         out: list[HotItem] = []
+
+        STOP = {
+            "the", "a", "an", "of", "to", "and", "in", "on", "for", "with",
+            "at", "is", "are", "its", "it", "that", "this", "as", "by",
+            "from", "how", "what", "why", "new", "can", "will", "be",
+        }
+
+        def tokens(text: str) -> set[str]:
+            words = re.findall(r"[a-z0-9]+", text.lower())
+            return {w for w in words if len(w) > 2 and w not in STOP}
+
+        def fingerprint(it: HotItem) -> set[str]:
+            """稀有金额指纹。
+
+            同一事件的融资/收购报道，标题措辞差异再大，也会共享同一个
+            金额（$7.5B / 870M / $1.8 billion）。金额在「同一天 + AI 领域」
+            这个语境下稀有度极高，实测误伤率可忽略。
+
+            只收有辨识度的金额：
+              - billion 级（任意值）：$7.5B / $1.8 billion
+              - million 级但 ≥100：870M / $250 million
+            避开 「$50M」「$10M」这类高频小额，否则会误伤
+            同一天的多起中等融资。
+            """
+            text = (it.title + " " + it.summary).lower()
+            nums = re.findall(r"\$?\s?(\d+(?:\.\d+)?)\s?(billion|million)\b", text)
+            nums += re.findall(r"\$(\d+(?:\.\d+)?)\s?([bm])\b", text)
+            keys = set()
+            for n, u in nums:
+                try:
+                    val = float(n)
+                except ValueError:
+                    continue
+                unit = "b" if (u and u[0] == "b") else "m"
+                if unit == "m" and val < 100:
+                    continue        # 小额融资太常见，不足以判定同一事件
+                keys.add(f"{n}{unit}")
+            return keys
+
         for it in items:
             if it.url in seen_urls:
                 continue
             key = "".join(ch for ch in it.title.lower() if ch.isalnum())[:50]
             if key and key in seen_titles:
                 continue
+
+            # 指纹去重：命中同一稀有金额即视为同一事件
+            fkeys = fingerprint(it)
+            if fkeys and (fkeys & seen_fingerprints):
+                continue
+
+            # 词集相似度
+            tk = tokens(it.title)
+            dup = False
+            if len(tk) >= 4:
+                for prev in kept_tokens:
+                    if not prev:
+                        continue
+                    j = len(tk & prev) / len(tk | prev)
+                    if j >= 0.5:
+                        dup = True
+                        break
+            if dup:
+                continue
+
             seen_urls.add(it.url)
             if key:
                 seen_titles.add(key)
+            if fkeys:
+                seen_fingerprints |= fkeys
+            kept_tokens.append(tk)
             out.append(it)
         return out
 
