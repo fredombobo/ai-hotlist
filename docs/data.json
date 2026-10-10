@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-10T18:35:21.799838+08:00",
-  "total": 13,
+  "generated_at": "2026-10-10T18:36:52.035269+08:00",
+  "total": 14,
   "items": [
     {
       "title": "affaan-m/ECC",
-      "brief": "为 Claude Code、Cursor 等智能体框架做性能与记忆优化",
+      "brief": "为 Claude Code、Cursor 等编码代理统一加装记忆与安全层的开源工具",
       "url": "https://github.com/affaan-m/ECC",
       "source": "github",
       "source_label": "GitHub",
       "summary": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "score": 100.0,
-      "raw_score": 276192.0,
+      "raw_score": 276194.0,
       "author": "affaan-m",
       "published_at": "2026-10-10T01:41:12+00:00",
       "tags": [
@@ -19,7 +19,7 @@
         "claude"
       ],
       "extra": {
-        "stars": 276192,
+        "stars": 276194,
         "forks": 41206,
         "language": "JavaScript",
         "topics": [
@@ -34,7 +34,7 @@
     },
     {
       "title": "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
-      "brief": "内部评估曾联网，模型或借此学会规避监督，先断网保安全",
+      "brief": "内部评估曾联网，模型或借此学会规避管控，先断网止损",
       "url": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
       "source": "media_rss",
       "source_label": "媒体",
@@ -50,7 +50,7 @@
     },
     {
       "title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
-      "brief": "非文本模型主打速度与省 token，发布数周即获 75 亿美元估值",
+      "brief": "TypeSafe 称其速度远超 LLM 且 token 消耗极低，但技术细节未公开",
       "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
       "source": "media_rss",
       "source_label": "媒体",
@@ -66,7 +66,7 @@
     },
     {
       "title": "What mathematicians should know about the Lean Theorem Prover: reliability & AI",
-      "brief": "陶哲轩撰文谈 Lean 证明器可靠性，及 AI 介入数学证明的边界",
+      "brief": "陶哲轩撰文解释 Lean 证明助手可靠性，及 AI 辅助数学的边界",
       "url": "https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/",
       "source": "media_rss",
       "source_label": "媒体",
@@ -82,7 +82,7 @@
     },
     {
       "title": "Amazon drops data center NDAs, and AI agents want your credit card",
-      "brief": "继微软后亚马逊也放弃数据中心保密协议，缓解地方社区阻力",
+      "brief": "继微软后亚马逊也放弃保密协议，回应社区对数据中心透明度的施压",
       "url": "https://techcrunch.com/podcast/amazon-drops-data-center-ndas-and-ai-agents-want-your-credit-card/",
       "source": "media_rss",
       "source_label": "媒体",
@@ -113,13 +113,37 @@
       }
     },
     {
+      "title": "A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization",
+      "brief": "评测 LLM 智能体做黑盒优化，目标函数昂贵时能否省评估次数",
+      "url": "https://arxiv.org/abs/2610.12183v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "Black-box optimization (BBO) arises in many scientific and engineering problems where objective evaluations are expensive and limited. Recent large language model (LLM) agents offer a new way to approach BBO by combining task semantics, computation, optimization tools, and feedback-driven decision…",
+      "score": 85.0,
+      "raw_score": 5.0,
+      "author": "Ming Chen, Rong-Xi Tan, Ke Xue",
+      "published_at": "2026-10-08T07:48:07+00:00",
+      "tags": [
+        "cs.LG",
+        "cs.AI",
+        "cs.NE"
+      ],
+      "extra": {
+        "categories": [
+          "cs.LG",
+          "cs.AI",
+          "cs.NE"
+        ]
+      }
+    },
+    {
       "title": "NousResearch/hermes-agent",
-      "brief": "Nous Research 推出可随用户使用持续进化的智能体",
+      "brief": "Nous Research 推出可随使用积累记忆、持续进化的个人代理框架",
       "url": "https://github.com/NousResearch/hermes-agent",
       "source": "github",
       "source_label": "GitHub",
       "summary": "The agent that grows with you",
-      "score": 79.5,
+      "score": 74.6,
       "raw_score": 252397.0,
       "author": "NousResearch",
       "published_at": "2026-10-10T10:23:30+00:00",
@@ -130,7 +154,7 @@
       ],
       "extra": {
         "stars": 252397,
-        "forks": 54540,
+        "forks": 54539,
         "language": "Python",
         "topics": [
           "ai",
@@ -143,13 +167,59 @@
       }
     },
     {
+      "title": "Accurate but Not Humble: Evaluating Epistemic Humility in LLM Agents under Knowledge Conflict",
+      "brief": "检索证据与模型先验冲突时，智能体往往坚持错误答案而非认错",
+      "url": "https://arxiv.org/abs/2610.12360v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "When retrieved evidence contradicts an agent's prior beliefs, does it revise its answer, acknowledge uncertainty, or persist with an incorrect conclusion? Existing evaluations of agentic systems focus primarily on task success, offering limited insight into how agents handle such conflicts.",
+      "score": 42.5,
+      "raw_score": 4.0,
+      "author": "Kaiser Sun, Bernal Jimenez Gutierrez, Hongjun Liu",
+      "published_at": "2026-10-08T09:25:06+00:00",
+      "tags": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "extra": {
+        "categories": [
+          "cs.AI",
+          "cs.CL"
+        ]
+      }
+    },
+    {
+      "title": "Forms of LLM-Integrated Applications from LLM-Chats to Autonomous AI Agent System",
+      "brief": "",
+      "url": "https://arxiv.org/abs/2610.11899v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "Large language models (LLMs) are increasingly embedded as components in software systems, marketed under labels such as chatbot, copilot, retrieval-augmented generation, workflow, coding agent and AI agent.",
+      "score": 42.5,
+      "raw_score": 4.0,
+      "author": "Irene Weber",
+      "published_at": "2026-10-08T05:05:33+00:00",
+      "tags": [
+        "cs.CL",
+        "cs.AI",
+        "cs.SE"
+      ],
+      "extra": {
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "cs.SE"
+        ]
+      }
+    },
+    {
       "title": "firecrawl/firecrawl",
-      "brief": "开源爬虫工具，把网页转成 LLM 可用的干净数据",
+      "brief": "把网页抓取封装成 API，供 AI 智能体直接调用",
       "url": "https://github.com/firecrawl/firecrawl",
       "source": "github",
       "source_label": "GitHub",
       "summary": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥",
-      "score": 25.8,
+      "score": 8.0,
       "raw_score": 190052.0,
       "author": "firecrawl",
       "published_at": "2026-10-10T05:31:12+00:00",
@@ -179,7 +249,7 @@
       "source": "github",
       "source_label": "GitHub",
       "summary": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
-      "score": 23.6,
+      "score": 5.2,
       "raw_score": 187503.0,
       "author": "Significant-Gravitas",
       "published_at": "2026-10-10T10:33:45+00:00",
@@ -203,14 +273,36 @@
       }
     },
     {
+      "title": "From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents",
+      "brief": "",
+      "url": "https://arxiv.org/abs/2610.12463v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "In 2026, cybersecurity evaluations involving OpenAI, Anthropic, and Google agents reached real systems outside their authorized test scope. The paths were different.",
+      "score": 0.0,
+      "raw_score": 3.0,
+      "author": "Abbas Raftari",
+      "published_at": "2026-10-08T09:59:49+00:00",
+      "tags": [
+        "cs.CR",
+        "cs.AI"
+      ],
+      "extra": {
+        "categories": [
+          "cs.CR",
+          "cs.AI"
+        ]
+      }
+    },
+    {
       "title": "ollama/ollama",
       "brief": "",
       "url": "https://github.com/ollama/ollama",
       "source": "github",
       "source_label": "GitHub",
       "summary": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
-      "score": 19.4,
-      "raw_score": 182594.0,
+      "score": 0.0,
+      "raw_score": 182593.0,
       "author": "ollama",
       "published_at": "2026-10-10T07:31:41+00:00",
       "tags": [
@@ -219,7 +311,7 @@
         "gemma3"
       ],
       "extra": {
-        "stars": 182594,
+        "stars": 182593,
         "forks": 18181,
         "language": "Go",
         "topics": [
@@ -229,96 +321,6 @@
           "glm",
           "go",
           "golang"
-        ]
-      }
-    },
-    {
-      "title": "f/prompts.chat",
-      "brief": "",
-      "url": "https://github.com/f/prompts.chat",
-      "source": "github",
-      "source_label": "GitHub",
-      "summary": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
-      "score": 10.6,
-      "raw_score": 172322.0,
-      "author": "f",
-      "published_at": "2026-10-10T03:21:41+00:00",
-      "tags": [
-        "ai",
-        "artificial-intelligence",
-        "awesome-list"
-      ],
-      "extra": {
-        "stars": 172322,
-        "forks": 22078,
-        "language": "HTML",
-        "topics": [
-          "ai",
-          "artificial-intelligence",
-          "awesome-list",
-          "chatgpt",
-          "chatgpt-prompts",
-          "claude"
-        ]
-      }
-    },
-    {
-      "title": "huggingface/transformers",
-      "brief": "",
-      "url": "https://github.com/huggingface/transformers",
-      "source": "github",
-      "source_label": "GitHub",
-      "summary": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
-      "score": 6.0,
-      "raw_score": 166967.0,
-      "author": "huggingface",
-      "published_at": "2026-10-10T02:22:38+00:00",
-      "tags": [
-        "audio",
-        "deep-learning",
-        "deepseek"
-      ],
-      "extra": {
-        "stars": 166967,
-        "forks": 34783,
-        "language": "Python",
-        "topics": [
-          "audio",
-          "deep-learning",
-          "deepseek",
-          "gemma",
-          "glm",
-          "hacktoberfest"
-        ]
-      }
-    },
-    {
-      "title": "DietrichGebert/ponytail",
-      "brief": "",
-      "url": "https://github.com/DietrichGebert/ponytail",
-      "source": "github",
-      "source_label": "GitHub",
-      "summary": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-      "score": 0.0,
-      "raw_score": 160040.0,
-      "author": "DietrichGebert",
-      "published_at": "2026-10-10T04:19:53+00:00",
-      "tags": [
-        "agent-skills",
-        "ai-agents",
-        "claude"
-      ],
-      "extra": {
-        "stars": 160040,
-        "forks": 8609,
-        "language": "JavaScript",
-        "topics": [
-          "agent-skills",
-          "ai-agents",
-          "claude",
-          "claude-code",
-          "claude-code-plugin",
-          "cursor-rules"
         ]
       }
     }
