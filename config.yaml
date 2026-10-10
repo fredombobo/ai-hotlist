@@ -13,9 +13,10 @@ output:
   json: "docs/data.json"
   brief: "docs/brief.txt"        # 简报预览（企业微信 markdown 长什么样）
 
-# --- 企业微信机器人（默认关闭，确认效果后再启用） ---
+# --- 企业微信机器人 ---
+# webhook_url 留空，由 GitHub Secrets 的 WECOM_WEBHOOK_KEY 注入
 wecom:
-  enabled: false
+  enabled: true
   webhook_url: ""
 
 # --- LLM 中文提要 ---
