@@ -1,0 +1,39 @@
+🔥 **AI 热点日报** · 10/17
+<font color="comment">值得一读 5 | 论文速览 1</font>
+
+**📰 值得一读** · 媒体解读与观点
+
+1. **成本压力下弃用Claude，转投OpenAI合作，模型供应格局生变。**
+   <font color="comment">Replit is no longer working with Anthropic, CEO says</font>
+   <font color="comment">TechCrunch AI · 10-17 05:22</font>
+   [阅读原文](https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/)
+
+2. **凭证泄露与过宽云权限成入口，AI代理已开始被真实滥用。**
+   <font color="comment">India becomes the latest country to report rogue AI agent…</font>
+   <font color="comment">TechCrunch AI · 10-17 01:52</font>
+   [阅读原文](https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/)
+
+3. **现有评测只覆盖少数任务，与实际工作场景严重脱节。**
+   <font color="comment">90% of US working hours are spent on tasks not covered well…</font>
+   <font color="comment">Hacker News AI · 10-17 01:08</font>
+   [阅读原文](https://www.mercor.com/research/labor-index/benchmark-map/)
+
+4. **执行器、机械手、安全标准仍在重建，机器人尚处拼装阶段。**
+   <font color="comment">Physical AI is more than robots, says the Nvidia veteran now…</font>
+   <font color="comment">TechCrunch AI · 10-17 00:30</font>
+   [阅读原文](https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/)
+
+5. **Glimpse在图表推理与短视频描述上超过GPT-6 Astra。**
+   <font color="comment">Elorian’s first AI model wants to reason with images, not…</font>
+   <font color="comment">TechCrunch AI · 10-17 00:01</font>
+   [阅读原文](https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/)
+
+**📄 论文速览** · 有工程价值的论文
+
+1. **让模型预先整理长文档工作区，主动预判后续查询而非被动检索。**
+   <font color="comment">Librarian Agents: Training LLMs to Curate Long-Context…</font>
+   <font color="comment">cs.LG/cs.AI · 10-16 01:35</font>
+   [阅读原文](https://arxiv.org/abs/2610.22273v1)
+
+---
+<font color="comment">完整页面 [点击查看](https://fredombobo.github.io/ai-hotlist/)</font>

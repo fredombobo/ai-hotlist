@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 热点日报</title>
+<style>
+  :root {
+    --bg: #fafafa;
+    --surface: #ffffff;
+    --border: #e5e5e5;
+    --border-strong: #d4d4d4;
+    --text: #18181b;
+    --text-2: #52525b;
+    --text-3: #a1a1aa;
+    --lime: #C5E803;
+    --lime-soft: #f2fac4;
+    --radius: 6px;
+    --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+            "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
+
+  /* ---------- Header ---------- */
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 40px 0 24px;
+    margin-bottom: 32px;
+  }
+  .kicker {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-3);
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  h1 .dot { color: var(--lime); }
+  .stats { display: flex; gap: 20px; flex-wrap: wrap; font-size: 13px; }
+  .stat { display: flex; align-items: baseline; gap: 6px; color: var(--text-2); }
+  .stat b {
+    font-family: var(--mono);
+    font-size: 15px;
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  /* ---------- 简报预览 ---------- */
+  .preview {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+  .preview-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    background: #f4f4f5;
+  }
+  .preview-head span {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-2);
+  }
+  .preview-head em {
+    font-style: normal;
+    font-size: 11px;
+    color: var(--text-3);
+  }
+  pre.brief {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    line-height: 1.85;
+    color: var(--text);
+    padding: 18px 20px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  /* ---------- Sections ---------- */
+  section { margin-bottom: 44px; }
+  .sec-head {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding-bottom: 12px;
+    margin-bottom: 2px;
+    border-bottom: 2px solid var(--text);
+  }
+  .sec-head .ico { font-size: 17px; }
+  .sec-head h2 {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .sec-head .hint {
+    font-size: 12.5px;
+    color: var(--text-3);
+    margin-left: 2px;
+  }
+  .sec-head .n {
+    margin-left: auto;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-3);
+  }
+
+  /* ---------- Item ---------- */
+  .item {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 0 12px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .item:last-child { border-bottom: none; }
+  .item .idx {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--text-3);
+    padding-top: 2px;
+  }
+  .item .lead {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 6px;
+    letter-spacing: -0.005em;
+  }
+  .item .lead a { color: var(--text); text-decoration: none; }
+  .item .lead a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--lime);
+    text-decoration-thickness: 2.5px;
+    text-underline-offset: 3px;
+  }
+  .item .orig {
+    font-size: 13px;
+    color: var(--text-2);
+    margin-bottom: 8px;
+    line-height: 1.55;
+  }
+  .item .meta {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-3);
+  }
+  .item .meta .tag {
+    padding: 2px 7px;
+    border: 1px solid var(--border-strong);
+    border-radius: 3px;
+    color: var(--text-2);
+    background: var(--surface);
+  }
+  .item .meta .hot {
+    background: var(--lime-soft);
+    border-color: var(--lime);
+    color: #4a5700;
+    font-weight: 600;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+    font-size: 12px;
+    color: var(--text-3);
+    font-family: var(--mono);
+    line-height: 1.9;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>AI 热点日报<span class="dot">.</span></h1>
+    <div class="stats">
+      
+      <span class="stat">📰 值得一读 <b>5</b></span>
+      
+      <span class="stat">📄 论文速览 <b>1</b></span>
+      
+      <span class="stat" style="margin-left:auto">2026-10-17 09:23 CST</span>
+    </div>
+  </header>
+
+  <div class="preview">
+    <div class="preview-head">
+      <span>简报预览 · 企业微信实际观感</span>
+      <em>docs/brief.txt</em>
+    </div>
+    <pre class="brief">🔥 **AI 热点日报** · 10/17
+<font color="comment">值得一读 5 | 论文速览 1</font>
+
+**📰 值得一读** · 媒体解读与观点
+
+1. **成本压力下弃用Claude，转投OpenAI合作，模型供应格局生变。**
+   <font color="comment">Replit is no longer working with Anthropic, CEO says</font>
+   <font color="comment">TechCrunch AI · 10-17 05:22</font>
+   [阅读原文](https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/)
+
+2. **凭证泄露与过宽云权限成入口，AI代理已开始被真实滥用。**
+   <font color="comment">India becomes the latest country to report rogue AI agent…</font>
+   <font color="comment">TechCrunch AI · 10-17 01:52</font>
+   [阅读原文](https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/)
+
+3. **现有评测只覆盖少数任务，与实际工作场景严重脱节。**
+   <font color="comment">90% of US working hours are spent on tasks not covered well…</font>
+   <font color="comment">Hacker News AI · 10-17 01:08</font>
+   [阅读原文](https://www.mercor.com/research/labor-index/benchmark-map/)
+
+4. **执行器、机械手、安全标准仍在重建，机器人尚处拼装阶段。**
+   <font color="comment">Physical AI is more than robots, says the Nvidia veteran now…</font>
+   <font color="comment">TechCrunch AI · 10-17 00:30</font>
+   [阅读原文](https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/)
+
+5. **Glimpse在图表推理与短视频描述上超过GPT-6 Astra。**
+   <font color="comment">Elorian’s first AI model wants to reason with images, not…</font>
+   <font color="comment">TechCrunch AI · 10-17 00:01</font>
+   [阅读原文](https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/)
+
+**📄 论文速览** · 有工程价值的论文
+
+1. **让模型预先整理长文档工作区，主动预判后续查询而非被动检索。**
+   <font color="comment">Librarian Agents: Training LLMs to Curate Long-Context…</font>
+   <font color="comment">cs.LG/cs.AI · 10-16 01:35</font>
+   [阅读原文](https://arxiv.org/abs/2610.22273v1)
+
+---
+<font color="comment">完整页面 [点击查看](https://fredombobo.github.io/ai-hotlist/)</font></pre>
+  </div>
+
+  
+  <section>
+    <div class="sec-head">
+      <span class="ico">📰</span>
+      <h2>值得一读</h2>
+      <span class="hint">媒体解读与观点</span>
+      <span class="n">5</span>
+    </div>
+    
+    <div class="item">
+      <div class="idx">01</div>
+      <div>
+        <div class="lead">
+          <a href="https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/" target="_blank" rel="noopener">成本压力下弃用Claude，转投OpenAI合作，模型供应格局生变。</a>
+        </div>
+        
+        <div class="orig">Replit is no longer working with Anthropic, CEO says</div>
+        
+        <div class="meta">
+          
+          
+          
+          <span class="tag">TechCrunch AI</span>
+          
+          
+          <span>10-17 05:22</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="item">
+      <div class="idx">02</div>
+      <div>
+        <div class="lead">
+          <a href="https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/" target="_blank" rel="noopener">凭证泄露与过宽云权限成入口，AI代理已开始被真实滥用。</a>
+        </div>
+        
+        <div class="orig">India becomes the latest country to report rogue AI agent activity</div>
+        
+        <div class="meta">
+          
+          
+          
+          <span class="tag">TechCrunch AI</span>
+          
+          
+          <span>10-17 01:52</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="item">
+      <div class="idx">03</div>
+      <div>
+        <div class="lead">
+          <a href="https://www.mercor.com/research/labor-index/benchmark-map/" target="_blank" rel="noopener">现有评测只覆盖少数任务，与实际工作场景严重脱节。</a>
+        </div>
+        
+        <div class="orig">90% of US working hours are spent on tasks not covered well by AI benchmarks</div>
+        
+        <div class="meta">
+          
+          
+          
+          <span class="tag">Hacker News AI</span>
+          
+          
+          <span>10-17 01:08</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="item">
+      <div class="idx">04</div>
+      <div>
+        <div class="lead">
+          <a href="https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/" target="_blank" rel="noopener">执行器、机械手、安全标准仍在重建，机器人尚处拼装阶段。</a>
+        </div>
+        
+        <div class="orig">Physical AI is more than robots, says the Nvidia veteran now investing in it</div>
+        
+        <div class="meta">
+          
+          
+          
+          <span class="tag">TechCrunch AI</span>
+          
+          
+          <span>10-17 00:30</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="item">
+      <div class="idx">05</div>
+      <div>
+        <div class="lead">
+          <a href="https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/" target="_blank" rel="noopener">Glimpse在图表推理与短视频描述上超过GPT-6 Astra。</a>
+        </div>
+        
+        <div class="orig">Elorian’s first AI model wants to reason with images, not just about them</div>
+        
+        <div class="meta">
+          
+          
+          
+          <span class="tag">TechCrunch AI</span>
+          
+          
+          <span>10-17 00:01</span>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  
+  <section>
+    <div class="sec-head">
+      <span class="ico">📄</span>
+      <h2>论文速览</h2>
+      <span class="hint">有工程价值的论文</span>
+      <span class="n">1</span>
+    </div>
+    
+    <div class="item">
+      <div class="idx">01</div>
+      <div>
+        <div class="lead">
+          <a href="https://arxiv.org/abs/2610.22273v1" target="_blank" rel="noopener">让模型预先整理长文档工作区，主动预判后续查询而非被动检索。</a>
+        </div>
+        
+        <div class="orig">Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries</div>
+        
+        <div class="meta">
+          
+          
+          
+          
+          <span class="tag">cs.LG</span>
+          
+          <span class="tag">cs.AI</span>
+          
+          <span>10-16 01:35</span>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  
+
+  <footer>
+    AI 热点日报 · 每日自动更新<br>
+    数据来源：GitHub · 英文媒体与博客 · arXiv<br>
+    生成时间 2026-10-17 09:23 CST
+  </footer>
+
+</div>
+</body>
+</html>
