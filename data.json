@@ -1,0 +1,190 @@
+{
+  "generated_at": "2026-10-24T09:46:06.459423+08:00",
+  "total": 10,
+  "items": [
+    {
+      "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
+      "brief": "工程师刚说断网方案不可行，OpenAI 就宣布前沿模型不再联网训练。",
+      "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Tim Fernholz",
+      "published_at": "2026-10-23T23:05:49+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "TechCrunch AI"
+      }
+    },
+    {
+      "title": "Quick Study",
+      "brief": "用 Claude 把照片几秒内重绘成笔刷画，展示模型实时生成能力。",
+      "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Tool: Quick Study Prompt to Claude Opus 5.5 High : Build an artifact where you open a photo and it rapidly (in a few seconds) paints a version of that photo using a canvas element and simulated paintbrush See also my previous experiment getting Claude Fable to simulate a watercolor illustration with P5.js.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Simon Willison",
+      "published_at": "2026-10-23T21:35:13+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "Simon Willison"
+      }
+    },
+    {
+      "title": "Introducing Kimi K3.1 Pro",
+      "brief": "Kimi K3.1 Pro 先上 API，权重承诺 2026 年 11 月才开源。",
+      "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Introducing Kimi K3.1 Pro Kimi K3.1 Pro landed on the Kimi API today - it's not yet open weights, but Moonshot promise \"Full model weights will be released by Nov 4, 2026\". They're also offering a \"Highspeed\" version that's 2-3x faster, at twice the price (except for input token cache hits, which are priced the same).",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Simon Willison",
+      "published_at": "2026-10-23T19:40:54+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "Simon Willison"
+      }
+    },
+    {
+      "title": "Uber rival inDrive eyes 2027 robotaxi tests in Central Asia with Pony AI and Nvidia",
+      "brief": "inDrive 联手小马智行和英伟达，2027 年在哈萨克斯坦测无人出租车。",
+      "url": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "The company plans to begin testing Pony.ai's robotaxis in Kazakhstan's capital in the first half of 2027.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Jagmeet Singh",
+      "published_at": "2026-10-23T04:00:00+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "TechCrunch AI"
+      }
+    },
+    {
+      "title": "Left alone with nothing to do, AI agents started playing",
+      "brief": "MIT 把 13 个 AI 扔到虚拟荒岛，它们自己发明游戏还提升了任务表现。",
+      "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "MIT researchers marooned 13 AIs on a virtual island, and they responded by inventing games, mourning a lost ring and, eventually, getting better at their jobs.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Aditya Mehta",
+      "published_at": "2026-10-23T00:45:37+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "TechCrunch AI"
+      }
+    },
+    {
+      "title": "OpenAI working on new $30B raise at $1.25T valuation ahead of IPO",
+      "brief": "",
+      "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Should OpenAI command an over $1 trillion valuation with this round, it would break records as the most highly valued private company ever.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Julie Bort",
+      "published_at": "2026-10-22T22:08:24+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "TechCrunch AI"
+      }
+    },
+    {
+      "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+      "brief": "新基准测工具调用代理在证据缺失时，会不会误执行被禁止的操作。",
+      "url": "https://arxiv.org/abs/2610.31650v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "Tool-using language model agents rely on environmental facts to decide whether an action is permitted. When a tool response omits a safety-relevant fact, an agent may carry out a prohibited action even though the user request is benign and every returned statement is true.",
+      "score": 85.0,
+      "raw_score": 5.0,
+      "author": "Qijin Zhang, Hanzhen Wang, Yuehan Zhao",
+      "published_at": "2026-10-22T17:57:04+00:00",
+      "tags": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "extra": {
+        "categories": [
+          "cs.AI",
+          "cs.LG"
+        ]
+      }
+    },
+    {
+      "title": "SCOPE: Compiling Natural-Language Policies into Neurosymbolic Predicate Programs",
+      "brief": "",
+      "url": "https://arxiv.org/abs/2610.31062v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "Policy enforcement for LLM agents has shifted from single-turn content moderation to compound, application-specific policies evaluated over multi-turn transcripts and tool-call trajectories.",
+      "score": 85.0,
+      "raw_score": 5.0,
+      "author": "Arnon Mazza, Elad Levi",
+      "published_at": "2026-10-22T10:41:13+00:00",
+      "tags": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "extra": {
+        "categories": [
+          "cs.AI",
+          "cs.CL"
+        ]
+      }
+    },
+    {
+      "title": "Training Small Language Models for Transferable Tool Selection",
+      "brief": "",
+      "url": "https://arxiv.org/abs/2610.31483v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "As LLM agents operate over corpora of more than ten thousand tools, selecting the right tool for a complex multi-step user instruction becomes a central bottleneck. Tool descriptions cannot all fit in context, and relevance-based retrievers only rank tools without knowing which are actually needed.",
+      "score": 0.0,
+      "raw_score": 4.0,
+      "author": "Zhaoyi Zhou, Akshayaa Magesh, Jeongyeol Kwon",
+      "published_at": "2026-10-22T16:07:49+00:00",
+      "tags": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "extra": {
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ]
+      }
+    },
+    {
+      "title": "Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory Control Between Reasoning and Action",
+      "brief": "",
+      "url": "https://arxiv.org/abs/2610.31376v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "This paper studies the problem of safe tool execution for large language model (LLM) agents under prompt injection. Using Petri nets, we formalize the execution harness between the LLM and its tools as a supervisory control problem, in which marks represent capabilities, approvals and budgets.",
+      "score": 0.0,
+      "raw_score": 4.0,
+      "author": "Chao Gu, Quanyan Zhu",
+      "published_at": "2026-10-22T14:48:16+00:00",
+      "tags": [
+        "cs.AI",
+        "eess.SY"
+      ],
+      "extra": {
+        "categories": [
+          "cs.AI",
+          "eess.SY"
+        ]
+      }
+    }
+  ]
+}

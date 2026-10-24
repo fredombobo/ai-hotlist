@@ -1,0 +1,39 @@
+🔥 **AI 热点日报** · 10/24
+<font color="comment">值得一读 5 | 论文速览 1</font>
+
+**📰 值得一读** · 媒体解读与观点
+
+1. **工程师刚说断网方案不可行，OpenAI 就宣布前沿模型不再联网训练。**
+   <font color="comment">OpenAI says it will no longer train its AI models on the live…</font>
+   <font color="comment">TechCrunch AI · 10-24 07:05</font>
+   [阅读原文](https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/)
+
+2. **用 Claude 把照片几秒内重绘成笔刷画，展示模型实时生成能力。**
+   <font color="comment">Quick Study</font>
+   <font color="comment">Simon Willison · 10-24 05:35</font>
+   [阅读原文](https://simonwillison.net/2026/Oct/23/quick-study-painter/)
+
+3. **Kimi K3.1 Pro 先上 API，权重承诺 2026 年 11 月才开源。**
+   <font color="comment">Introducing Kimi K3.1 Pro</font>
+   <font color="comment">Simon Willison · 10-24 03:40</font>
+   [阅读原文](https://simonwillison.net/2026/Oct/23/kimi-k31-pro/)
+
+4. **inDrive 联手小马智行和英伟达，2027 年在哈萨克斯坦测无人出租车。**
+   <font color="comment">Uber rival inDrive eyes 2027 robotaxi tests in Central Asia…</font>
+   <font color="comment">TechCrunch AI · 10-23 12:00</font>
+   [阅读原文](https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/)
+
+5. **MIT 把 13 个 AI 扔到虚拟荒岛，它们自己发明游戏还提升了任务表现。**
+   <font color="comment">Left alone with nothing to do, AI agents started playing</font>
+   <font color="comment">TechCrunch AI · 10-23 08:45</font>
+   [阅读原文](https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/)
+
+**📄 论文速览** · 有工程价值的论文
+
+1. **新基准测工具调用代理在证据缺失时，会不会误执行被禁止的操作。**
+   <font color="comment">EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM…</font>
+   <font color="comment">cs.AI/cs.LG · 10-23 01:57</font>
+   [阅读原文](https://arxiv.org/abs/2610.31650v1)
+
+---
+<font color="comment">完整页面 [点击查看](https://fredombobo.github.io/ai-hotlist/)</font>
