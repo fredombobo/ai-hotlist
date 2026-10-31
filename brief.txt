@@ -1,0 +1,39 @@
+🔥 **AI 热点日报** · 10/31
+<font color="comment">值得一读 5 | 论文速览 1</font>
+
+**📰 值得一读** · 媒体解读与观点
+
+1. **英伟达或为数据中心贷款担保，帮客户融资以稳住芯片需求**
+   <font color="comment">Nvidia weighs playing the cosigner for Nscale’s AI data…</font>
+   <font color="comment">TechCrunch AI · 10-31 09:20</font>
+   [阅读原文](https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/)
+
+2. **主打隐私的助手停运，小团队难敌大厂免费产品挤压**
+   <font color="comment">Ollie, a privacy-focused AI assistant, is shutting down</font>
+   <font color="comment">TechCrunch AI · 10-31 06:56</font>
+   [阅读原文](https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/)
+
+3. **高垃圾评级将推高融资成本，加剧其巨额支出的资金压力**
+   <font color="comment">Anthropic expected to receive high ‘junk’ rating from credit…</font>
+   <font color="comment">TechCrunch AI · 10-31 05:52</font>
+   [阅读原文](https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/)
+
+4. **债务攀升与现金流为负，投资者开始质疑基建投入能否回本**
+   <font color="comment">Cracks are emerging in the AI spending boom</font>
+   <font color="comment">TechCrunch AI · 10-31 05:17</font>
+   [阅读原文](https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/)
+
+5. **AI助手汇总众人口味投票选餐厅，并直接发短信订位**
+   <font color="comment">Zest’s new AI agent finds restaurants and books reservations…</font>
+   <font color="comment">TechCrunch AI · 10-31 01:47</font>
+   [阅读原文](https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/)
+
+**📄 论文速览** · 有工程价值的论文
+
+1. **仅凭预填充阶段状态预测输出长度，为推理调度提供理论边界**
+   <font color="comment">On the Fundamental Limits of Prefill-Based Decoding Length…</font>
+   <font color="comment">cs.AI/cs.CL · 10-30 01:36</font>
+   [阅读原文](https://arxiv.org/abs/2610.40541v1)
+
+---
+<font color="comment">完整页面 [点击查看](https://fredombobo.github.io/ai-hotlist/)</font>

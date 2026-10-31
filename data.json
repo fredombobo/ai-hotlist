@@ -1,0 +1,196 @@
+{
+  "generated_at": "2026-10-31T10:37:01.733437+08:00",
+  "total": 10,
+  "items": [
+    {
+      "title": "Nvidia weighs playing the cosigner for Nscale’s AI data center in West Virginia",
+      "brief": "英伟达或为数据中心贷款担保，帮客户融资以稳住芯片需求",
+      "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "When investors get nervous about AI spending, it helps to have the chipmaker that sells the chips offer to cosign the loan.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Aditya Mehta",
+      "published_at": "2026-10-31T01:20:05+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "TechCrunch AI"
+      }
+    },
+    {
+      "title": "Ollie, a privacy-focused AI assistant, is shutting down",
+      "brief": "主打隐私的助手停运，小团队难敌大厂免费产品挤压",
+      "url": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "As an increasing number of AI assistants flood the market, the founder of Ollie, an assistant that respected its users' privacy, says it will be shutting down in a week.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Lucas Ropek",
+      "published_at": "2026-10-30T22:56:13+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "TechCrunch AI"
+      }
+    },
+    {
+      "title": "Anthropic expected to receive high ‘junk’ rating from credit agencies following IPO, FT report says",
+      "brief": "高垃圾评级将推高融资成本，加剧其巨额支出的资金压力",
+      "url": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Blackstone's forecast is just a prediction, but naturally, a high junk rating would make it more difficult and costlier for Anthropic to raise the money to keep funding its massive spending that has undergirded its business.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Lucas Ropek",
+      "published_at": "2026-10-30T21:52:03+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "TechCrunch AI"
+      }
+    },
+    {
+      "title": "Cracks are emerging in the AI spending boom",
+      "brief": "债务攀升与现金流为负，投资者开始质疑基建投入能否回本",
+      "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Big Tech is pouring billions into AI infrastructure, but mounting debt, negative cash flow, and growing investor skepticism are raising questions about the sustainability of the AI spending boom.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Rebecca Bellan",
+      "published_at": "2026-10-30T21:17:40+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "TechCrunch AI"
+      }
+    },
+    {
+      "title": "Zest’s new AI agent finds restaurants and books reservations over text",
+      "brief": "AI助手汇总众人口味投票选餐厅，并直接发短信订位",
+      "url": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Can't agree on where to eat? Zest's AI concierge can combine everyone's tastes, put restaurant options to a vote, and make the reservation.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Sarah Perez",
+      "published_at": "2026-10-30T17:47:12+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "TechCrunch AI"
+      }
+    },
+    {
+      "title": "Proton's CEO Cancels AI 'Re-Interviews'",
+      "brief": "",
+      "url": "https://www.404media.co/protons-ceo-cancels-ai-re-interviews/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Article URL: https://www.404media.co/protons-ceo-cancels-ai-re-interviews/ Comments URL: https://news.ycombinator.com/item?id=50307183 Points: 263 # Comments: 220",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "cdrnsf",
+      "published_at": "2026-10-30T17:24:45+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "Hacker News AI"
+      }
+    },
+    {
+      "title": "On the Fundamental Limits of Prefill-Based Decoding Length Prediction",
+      "brief": "仅凭预填充阶段状态预测输出长度，为推理调度提供理论边界",
+      "url": "https://arxiv.org/abs/2610.40541v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "Predicting how many tokens a large language model (LLM) will decode, using only prefill-phase hidden states, is a key primitive for inference scheduling.",
+      "score": 85.0,
+      "raw_score": 4.0,
+      "author": "Haowen Shi, Xuzhe Yan, Fahao Chen",
+      "published_at": "2026-10-29T17:36:01+00:00",
+      "tags": [
+        "cs.AI",
+        "cs.CL",
+        "cs.IT"
+      ],
+      "extra": {
+        "categories": [
+          "cs.AI",
+          "cs.CL",
+          "cs.IT"
+        ]
+      }
+    },
+    {
+      "title": "Prefix Executability: Evaluating Tool-Using Agents Beyond Final Success",
+      "brief": "",
+      "url": "https://arxiv.org/abs/2610.40444v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "Tool-use benchmarks often score agents by final task success, but terminal outcomes can obscure whether the intermediate tool-call trajectory was executable. We propose prefix executability as a trajectory-level evaluation protocol for tool-using agents.",
+      "score": 85.0,
+      "raw_score": 4.0,
+      "author": "Amir H. Rezaeian, Weiyi Sun, Yassine Benajiba",
+      "published_at": "2026-10-29T16:58:04+00:00",
+      "tags": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "extra": {
+        "categories": [
+          "cs.AI",
+          "cs.CL"
+        ]
+      }
+    },
+    {
+      "title": "When to Assist and What to Suggest: Joint Gating and Memory-Grounded Hint Generation in One Compact Decoder",
+      "brief": "",
+      "url": "https://arxiv.org/abs/2610.40611v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "Proactive assistants offer short, memory-grounded hints during a conversation, deciding when to assist and what to suggest. Current systems split this between a gate and a larger generator; we evaluate both together on 28,058 decision points.",
+      "score": 0.0,
+      "raw_score": 3.0,
+      "author": "A. J. A. Jubayer Talukder, Mohammad Ariful Haque",
+      "published_at": "2026-10-29T17:54:07+00:00",
+      "tags": [
+        "cs.CL",
+        "cs.AI",
+        "cs.HC"
+      ],
+      "extra": {
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "cs.HC"
+        ]
+      }
+    },
+    {
+      "title": "VeriCUA: Verification as Agentic Exploration for Computer-Using Agents",
+      "brief": "",
+      "url": "https://arxiv.org/abs/2610.40578v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "Building and scaling computer-using agents (CUAs) across desktop, mobile, and web environments requires reliable task-completion verification for data curation, evaluation, and reinforcement learning.",
+      "score": 0.0,
+      "raw_score": 3.0,
+      "author": "Qiushi Sun, Da Yu, Alexander Knop",
+      "published_at": "2026-10-29T17:45:26+00:00",
+      "tags": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "extra": {
+        "categories": [
+          "cs.AI",
+          "cs.CL",
+          "cs.CV"
+        ]
+      }
+    }
+  ]
+}
