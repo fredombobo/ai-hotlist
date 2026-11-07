@@ -1,0 +1,184 @@
+{
+  "generated_at": "2026-11-07T10:58:54.505177+08:00",
+  "total": 10,
+  "items": [
+    {
+      "title": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
+      "brief": "融资尚未关闭，估值已超多数国家GDP，钱将用于算力扩张。",
+      "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "OpenAI has reportedly raised an additional $11 billion as part of a funding round that hasn't closed yet but is expected to in the coming weeks.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Lucas Ropek",
+      "published_at": "2026-11-06T22:53:46+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "TechCrunch AI"
+      }
+    },
+    {
+      "title": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
+      "brief": "渗透测试工具被公开挂网上，任何人都能拿来攻击，暴露供应链风险。",
+      "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Security researchers found hundreds of servers hosting the penetration testing tool Artex exposed to the internet, allowing anyone access to the hacking tool.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Zack Whittaker",
+      "published_at": "2026-11-06T18:44:38+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "TechCrunch AI"
+      }
+    },
+    {
+      "title": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
+      "brief": "Muse代理新增协作空间，Meta想让AI助手从对话走向团队工作流。",
+      "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Meta's Muse agents continue to get new features and integrations. Spaces promises to be a new way to interact with the AI helpers.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Lucas Ropek",
+      "published_at": "2026-11-06T18:44:20+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "TechCrunch AI"
+      }
+    },
+    {
+      "title": "How a Blue Wave midterm might reshape the AI industry",
+      "brief": "41项数据中心公投中40项收紧限制，民主党胜选或卡住AI基建扩张。",
+      "url": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to impose more restrictions on data center development.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Theresa Loconsolo, Anthony Ha, Sean O'Kane, Kirsten Korosec",
+      "published_at": "2026-11-06T18:00:00+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "TechCrunch AI"
+      }
+    },
+    {
+      "title": "After the midterms, is the AI industry in for a rough two years?",
+      "brief": "地方公投几乎全数限制数据中心，AI公司选址和电力审批将更难。",
+      "url": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to impose more restrictions on data center development.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Theresa Loconsolo, Anthony Ha",
+      "published_at": "2026-11-06T17:23:52+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "TechCrunch AI"
+      }
+    },
+    {
+      "title": "Quoting Nilay Patel",
+      "brief": "",
+      "url": "https://simonwillison.net/2026/Nov/6/nilay-patel/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "The products aren't good enough to sell people on the costs. You cannot tell people that you have to listen to the whine of a data center in their backyard for AI overviews and some of the most hilarious deep fake slop in history. It's not worth it. It just isn't worth it to anyone.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Simon Willison",
+      "published_at": "2026-11-06T17:13:12+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "Simon Willison"
+      }
+    },
+    {
+      "title": "The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI",
+      "brief": "聊天界面看不到工作区上下文，论文提出给LLM开放元访问来补短板。",
+      "url": "https://arxiv.org/abs/2611.08428v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "Chat remains the default surface for many large language model (LLM) tasks, even as agentic tools such as OpenCode excel at coding and automation. Yet the model sees the current dialogue but not the workspace around it.",
+      "score": 85.0,
+      "raw_score": 5.0,
+      "author": "Julian Kunkel, Ali Doosthosseini",
+      "published_at": "2026-11-05T18:22:24+00:00",
+      "tags": [
+        "cs.AI"
+      ],
+      "extra": {
+        "categories": [
+          "cs.AI"
+        ]
+      }
+    },
+    {
+      "title": "Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks",
+      "brief": "",
+      "url": "https://arxiv.org/abs/2611.08417v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "Coding agents are among the most economically consequential deployments of LLMs to date, making reliable evaluation increasingly important. Yet even benchmarks that are carefully validated at release can become stale.",
+      "score": 42.5,
+      "raw_score": 4.0,
+      "author": "E. Kelly Buchanan, Crystal Zhou, Scott W. Linderman",
+      "published_at": "2026-11-05T18:18:39+00:00",
+      "tags": [
+        "cs.AI"
+      ],
+      "extra": {
+        "categories": [
+          "cs.AI"
+        ]
+      }
+    },
+    {
+      "title": "PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?",
+      "brief": "",
+      "url": "https://arxiv.org/abs/2611.08175v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "Automating printed circuit board (PCB) routing requires coordinating board-level connectivity decisions with geometric execution under strict design rules. Although recent agents can interact with native routing tools, reliable routing on complex boards remains challenging.",
+      "score": 42.5,
+      "raw_score": 4.0,
+      "author": "Yue Zhang, Jilei Sun, Liqiang Jing",
+      "published_at": "2026-11-05T15:31:15+00:00",
+      "tags": [
+        "cs.AI"
+      ],
+      "extra": {
+        "categories": [
+          "cs.AI"
+        ]
+      }
+    },
+    {
+      "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+      "brief": "",
+      "url": "https://arxiv.org/abs/2611.08483v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods.",
+      "score": 0.0,
+      "raw_score": 3.0,
+      "author": "Qile Jiang, George Em Karniadakis",
+      "published_at": "2026-11-05T18:59:29+00:00",
+      "tags": [
+        "cs.AI",
+        "cs.NE"
+      ],
+      "extra": {
+        "categories": [
+          "cs.AI",
+          "cs.NE"
+        ]
+      }
+    }
+  ]
+}

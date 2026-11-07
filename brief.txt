@@ -1,0 +1,39 @@
+🔥 **AI 热点日报** · 11/07
+<font color="comment">值得一读 5 | 论文速览 1</font>
+
+**📰 值得一读** · 媒体解读与观点
+
+1. **融资尚未关闭，估值已超多数国家GDP，钱将用于算力扩张。**
+   <font color="comment">OpenAI reportedly raises an additional $11 billion at a $1.25…</font>
+   <font color="comment">TechCrunch AI · 11-07 06:53</font>
+   [阅读原文](https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/)
+
+2. **渗透测试工具被公开挂网上，任何人都能拿来攻击，暴露供应链风险。**
+   <font color="comment">Hundreds of Artex AI hacking tools found publicly exposed to…</font>
+   <font color="comment">TechCrunch AI · 11-07 02:44</font>
+   [阅读原文](https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/)
+
+3. **Muse代理新增协作空间，Meta想让AI助手从对话走向团队工作流。**
+   <font color="comment">Meta introduces Spaces, a new way to collaborate with your…</font>
+   <font color="comment">TechCrunch AI · 11-07 02:44</font>
+   [阅读原文](https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/)
+
+4. **41项数据中心公投中40项收紧限制，民主党胜选或卡住AI基建扩张。**
+   <font color="comment">How a Blue Wave midterm might reshape the AI industry</font>
+   <font color="comment">TechCrunch AI · 11-07 02:00</font>
+   [阅读原文](https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/)
+
+5. **地方公投几乎全数限制数据中心，AI公司选址和电力审批将更难。**
+   <font color="comment">After the midterms, is the AI industry in for a rough two…</font>
+   <font color="comment">TechCrunch AI · 11-07 01:23</font>
+   [阅读原文](https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/)
+
+**📄 论文速览** · 有工程价值的论文
+
+1. **聊天界面看不到工作区上下文，论文提出给LLM开放元访问来补短板。**
+   <font color="comment">The Power of Meta Access in the Software of the Future…</font>
+   <font color="comment">cs.AI · 11-06 02:22</font>
+   [阅读原文](https://arxiv.org/abs/2611.08428v1)
+
+---
+<font color="comment">完整页面 [点击查看](https://fredombobo.github.io/ai-hotlist/)</font>
