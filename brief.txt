@@ -1,0 +1,39 @@
+🔥 **AI 热点日报** · 11/14
+<font color="comment">值得一读 5 | 论文速览 1</font>
+
+**📰 值得一读** · 媒体解读与观点
+
+1. **Claude Code 支持多任务并行，无需人工干预即可调度多个 AI 工作单元**
+   <font color="comment">Anthropic Upgrades Claude Code Projects to Run Parallel AI…</font>
+   <font color="comment">Hacker News AI · 11-14 08:28</font>
+   [阅读原文](https://alphasignal.ai/news/anthropic-upgrades-claude-code-projects-to-run-parallel-ai-workers-hands-free)
+
+2. **黄仁勋离开后，英伟达对 AI 初创的投资可能缩水，估值承压**
+   <font color="comment">Jensen Huang’s departure blasts big hole in AI startup…</font>
+   <font color="comment">TechCrunch AI · 11-14 06:43</font>
+   [阅读原文](https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/)
+
+3. **一份反对低质 AI 生成内容的宣言，主张明确标注与质量底线**
+   <font color="comment">No AI Slop: A Manifesto</font>
+   <font color="comment">Hacker News AI · 11-14 03:51</font>
+   [阅读原文](https://www.slopmanifesto.com/)
+
+4. **LangChain 靠 LangSmith 拿下 7000 客户，模型无关平台获资本认可**
+   <font color="comment">AI agent startup LangChain hits $3B valuation</font>
+   <font color="comment">TechCrunch AI · 11-14 03:37</font>
+   [阅读原文](https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/)
+
+5. **研究显示中国顶尖模型训练用了被禁的英伟达芯片，出口管制效果存疑**
+   <font color="comment">Export-banned Nvidia chips are behind China’s most powerful…</font>
+   <font color="comment">TechCrunch AI · 11-14 02:40</font>
+   [阅读原文](https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/)
+
+**📄 论文速览** · 有工程价值的论文
+
+1. **为 Apple Silicon 上的 GPU 编码智能体提供隔离执行与命令调度方案**
+   <font color="comment">Metal Sandbox: Isolated Execution and Command Scheduling for…</font>
+   <font color="comment">cs.LG/cs.AI · 11-13 02:54</font>
+   [阅读原文](https://arxiv.org/abs/2611.17294v1)
+
+---
+<font color="comment">完整页面 [点击查看](https://fredombobo.github.io/ai-hotlist/)</font>

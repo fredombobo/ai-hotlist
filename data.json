@@ -1,0 +1,187 @@
+{
+  "generated_at": "2026-11-14T11:25:44.664527+08:00",
+  "total": 10,
+  "items": [
+    {
+      "title": "Anthropic Upgrades Claude Code Projects to Run Parallel AI Workers Hands-Free",
+      "brief": "Claude Code 支持多任务并行，无需人工干预即可调度多个 AI 工作单元",
+      "url": "https://alphasignal.ai/news/anthropic-upgrades-claude-code-projects-to-run-parallel-ai-workers-hands-free",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Article URL: https://alphasignal.ai/news/anthropic-upgrades-claude-code-projects-to-run-parallel-ai-workers-hands-free Comments URL: https://news.ycombinator.com/item?id=50492141 Points: 54 # Comments: 35",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "toppa33",
+      "published_at": "2026-11-14T00:28:11+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "Hacker News AI"
+      }
+    },
+    {
+      "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
+      "brief": "黄仁勋离开后，英伟达对 AI 初创的投资可能缩水，估值承压",
+      "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Marina Temkin, Dominic-Madori Davis",
+      "published_at": "2026-11-13T22:43:00+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "TechCrunch AI"
+      }
+    },
+    {
+      "title": "No AI Slop: A Manifesto",
+      "brief": "一份反对低质 AI 生成内容的宣言，主张明确标注与质量底线",
+      "url": "https://www.slopmanifesto.com/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Article URL: https://www.slopmanifesto.com/ Comments URL: https://news.ycombinator.com/item?id=50488769 Points: 186 # Comments: 107",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "bankombinator",
+      "published_at": "2026-11-13T19:51:56+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "Hacker News AI"
+      }
+    },
+    {
+      "title": "AI agent startup LangChain hits $3B valuation",
+      "brief": "LangChain 靠 LangSmith 拿下 7000 客户，模型无关平台获资本认可",
+      "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Julie Bort",
+      "published_at": "2026-11-13T19:37:57+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "TechCrunch AI"
+      }
+    },
+    {
+      "title": "Export-banned Nvidia chips are behind China’s most powerful AI models — uh-oh, Jensen!",
+      "brief": "研究显示中国顶尖模型训练用了被禁的英伟达芯片，出口管制效果存疑",
+      "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "New research shows the most advanced AI models from China were trained on banned Nvidia chips.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Tim Fernholz",
+      "published_at": "2026-11-13T18:40:30+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "TechCrunch AI"
+      }
+    },
+    {
+      "title": "The avalanche that hit math is coming for AI development",
+      "brief": "",
+      "url": "https://www.dwarkesh.com/p/rsi",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Article URL: https://www.dwarkesh.com/p/rsi Comments URL: https://news.ycombinator.com/item?id=50487854 Points: 60 # Comments: 101",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "crescit_eundo",
+      "published_at": "2026-11-13T18:39:42+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "Hacker News AI"
+      }
+    },
+    {
+      "title": "Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon",
+      "brief": "为 Apple Silicon 上的 GPU 编码智能体提供隔离执行与命令调度方案",
+      "url": "https://arxiv.org/abs/2611.17294v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "On-device inference requires kernels that make effective use of local accelerators. Efficient training and evaluation of models that generate Apple Metal kernels benefit from native macOS tools and concurrent agent sessions.",
+      "score": 85.0,
+      "raw_score": 5.0,
+      "author": "Haozhe Wang, Lina Chen, Fanqi Wan",
+      "published_at": "2026-11-12T18:54:42+00:00",
+      "tags": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "extra": {
+        "categories": [
+          "cs.LG",
+          "cs.AI",
+          "cs.CL",
+          "cs.DC"
+        ]
+      }
+    },
+    {
+      "title": "LiveGeo: Benchmarking Geographic Agents in Continuously Evolving Worlds",
+      "brief": "",
+      "url": "https://arxiv.org/abs/2611.17267v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "We introduce GeoWorld, a controllable and continuously evolving geographic environment platform for LLM agents, and LiveGeo, a benchmark for evaluating reliable decision-making in real-world geographic environments using GeoWorld.",
+      "score": 0.0,
+      "raw_score": 4.0,
+      "author": "Pengcheng Zhou, Xuanyu Liu, Yanchen Yin",
+      "published_at": "2026-11-12T18:45:58+00:00",
+      "tags": [
+        "cs.AI"
+      ],
+      "extra": {
+        "categories": [
+          "cs.AI"
+        ]
+      }
+    },
+    {
+      "title": "Skill Adapter: Personalized Modification and Online Routing of General-Purpose Skills",
+      "brief": "",
+      "url": "https://arxiv.org/abs/2611.17007v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "Large language model (LLM) agents use external skills to reuse task procedures and experience with tools. General-purpose skills describe shared execution procedures, while specific tool choices, operating practices, and output requirements vary across users.",
+      "score": 0.0,
+      "raw_score": 4.0,
+      "author": "Qijia Zhuang, Yanyi Gou, Wenbin Ma",
+      "published_at": "2026-11-12T16:05:23+00:00",
+      "tags": [
+        "cs.AI"
+      ],
+      "extra": {
+        "categories": [
+          "cs.AI"
+        ]
+      }
+    },
+    {
+      "title": "S1-Evo: Experience-Guided Evidence Competition Attacks on Typed System-1 Decision Models",
+      "brief": "",
+      "url": "https://arxiv.org/abs/2611.16937v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "Typed System-1 (S1) decision models are increasingly deployed in LLM agents for routing, moderation, and authorization to cut inference cost, yet untrusted context can still manipulate typed outputs and alter execution branches.",
+      "score": 0.0,
+      "raw_score": 4.0,
+      "author": "Kaixiang Wang, Junjie Li, Zhaojiacheng Zhou",
+      "published_at": "2026-11-12T15:21:44+00:00",
+      "tags": [
+        "cs.AI"
+      ],
+      "extra": {
+        "categories": [
+          "cs.AI"
+        ]
+      }
+    }
+  ]
+}
