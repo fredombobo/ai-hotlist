@@ -1,0 +1,191 @@
+{
+  "generated_at": "2026-11-28T12:49:39.419100+08:00",
+  "total": 10,
+  "items": [
+    {
+      "title": "datasette-charts 0.4a0",
+      "brief": "新增图表类型插件钩子，但作者自己还没用它做过任何东西",
+      "url": "https://simonwillison.net/2026/Nov/27/datasette-charts/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Release: datasette-charts 0.4a0 The new datasette-charts plugin has its own plugin hook to allow other plugins to define new chart types, but I hadn't actually used it for anything yet.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Simon Willison",
+      "published_at": "2026-11-27T23:57:17+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "Simon Willison"
+      }
+    },
+    {
+      "title": "datasette-mcp 0.4",
+      "brief": "修复与 Datasette 1.0a44 的兼容问题，适配新版接口",
+      "url": "https://simonwillison.net/2026/Nov/27/datasette-mcp/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Release: datasette-mcp 0.4 Fixed for compatibility with Datasette 1.0a44 . Tags: model-context-protocol , datasette",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Simon Willison",
+      "published_at": "2026-11-27T00:26:17+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "Simon Willison"
+      }
+    },
+    {
+      "title": "Quoting Jack Despain Zhou",
+      "brief": "AI 让表达趋同，YouTube 视频和会议演讲听起来都像 Claude",
+      "url": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "Among the many already existing effects of AI has been a great de-individualization. I open a YouTube video, and I hear Claude. I sit in a conference presentation, and I hear Claude.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Simon Willison",
+      "published_at": "2026-11-26T15:09:31+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "Simon Willison"
+      }
+    },
+    {
+      "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+      "brief": "SQLite 3.47 起内置的实验性工具，今天才被注意到有独特优势",
+      "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "sqlite3_rsync: Database Remote-Copy Tool For SQLite This additional SQLite tool has been around for a while now - it was added as \"experimental\" in SQLite 3.47.0 in October 2024 and enhanced in SQLite 3.50.0 in May 2025 . It was only today that I understood one of its most attractive characteristics.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Simon Willison",
+      "published_at": "2026-11-26T06:08:25+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "Simon Willison"
+      }
+    },
+    {
+      "title": "The New York Times warns photographers not to update Photoshop over AI features",
+      "brief": "纽约时报提醒摄影师别升级 Photoshop，担心 AI 功能改动照片",
+      "url": "https://simonwillison.net/2026/Nov/26/hn-50651685/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "My comment on The New York Times warns photographers not to update Photoshop over AI features &mdash; Hacker News. I had a NYT photographer take my picture at my home earlier this year (for a story about Moltbook, oddly enough).",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Simon Willison",
+      "published_at": "2026-11-26T05:08:46+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "Simon Willison"
+      }
+    },
+    {
+      "title": "Quoting Scott Aaronson",
+      "brief": "",
+      "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson/",
+      "source": "media_rss",
+      "source_label": "媒体",
+      "summary": "It’s now obvious that we’ll be getting, not one-off solutions to this or that complexity question, but a whole new continent of mathematical truth, one that we’d previously only glimpsed through fog. Picture van Leeuwenhoek first training a microscope on pondwater, or Galileo first training his telescope on the stars.",
+      "score": 92.0,
+      "raw_score": 50.0,
+      "author": "Simon Willison",
+      "published_at": "2026-11-25T23:26:32+00:00",
+      "tags": [],
+      "extra": {
+        "source_name": "Simon Willison"
+      }
+    },
+    {
+      "title": "IRTIQA: Evolving in English, Evaluated in Urdu -- Does Agent Self-Evolution Transfer from English to Urdu and Code-Switched Input?",
+      "brief": "发布 IRTIQA 基准，检验智能体自进化能否从英语迁移到乌尔都语",
+      "url": "https://arxiv.org/abs/2611.34303v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "As LLM agents increasingly learn from their own experience, the tasks they learn from and are evaluated on are almost always in English. We ask whether self-evolution transfers from English to Urdu, and release IRTIQA, a benchmark of aligned English, Urdu-translated, and Urdu code-switched variants…",
+      "score": 85.0,
+      "raw_score": 5.0,
+      "author": "Abdullah Hashmat, Danish Javed, Usman Naseem",
+      "published_at": "2026-11-25T12:56:41+00:00",
+      "tags": [
+        "cs.CL"
+      ],
+      "extra": {
+        "categories": [
+          "cs.CL"
+        ]
+      }
+    },
+    {
+      "title": "$μ$-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents",
+      "brief": "",
+      "url": "https://arxiv.org/abs/2611.34920v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "Voice agents in shared spaces must satisfy interdependent multi-user requests while upholding per-user authority, privacy, and task constraints. Existing evaluations offer limited coverage when participants react throughout a session.",
+      "score": 42.5,
+      "raw_score": 4.0,
+      "author": "Qihao Lin, Guanxu Chen, Shuhang Zheng",
+      "published_at": "2026-11-25T18:58:42+00:00",
+      "tags": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "extra": {
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ]
+      }
+    },
+    {
+      "title": "Solve Vision with Code: Coding Agents Are Stronger Visual Reasoners Than Video Models",
+      "brief": "",
+      "url": "https://arxiv.org/abs/2611.34813v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "Video generation models are increasingly evaluated as visual reasoners: given a first frame and a natural-language prompt, can the model produce the video in which the specified task is carried out?",
+      "score": 42.5,
+      "raw_score": 4.0,
+      "author": "Dezhi Luo, Fengyuan Yu, Haotian Zhang",
+      "published_at": "2026-11-25T18:01:22+00:00",
+      "tags": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "extra": {
+        "categories": [
+          "cs.CV",
+          "cs.AI",
+          "cs.LG",
+          "cs.MM"
+        ]
+      }
+    },
+    {
+      "title": "Attack Policy Selection can Mislead Monitor Evaluators",
+      "brief": "",
+      "url": "https://arxiv.org/abs/2611.34934v1",
+      "source": "arxiv",
+      "source_label": "论文",
+      "summary": "AI monitors, classifiers that flag dangerous behaviour by AI agents, are often evaluated against transcripts generated by attack policies acting as proxies for dangerous behaviour in deployment.",
+      "score": 0.0,
+      "raw_score": 3.0,
+      "author": "Charlie Griffin, Oliver Makins, Asa Cooper Stickland",
+      "published_at": "2026-11-25T18:59:28+00:00",
+      "tags": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "extra": {
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ]
+      }
+    }
+  ]
+}

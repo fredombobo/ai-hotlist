@@ -1,0 +1,39 @@
+🔥 **AI 热点日报** · 11/28
+<font color="comment">值得一读 5 | 论文速览 1</font>
+
+**📰 值得一读** · 媒体解读与观点
+
+1. **新增图表类型插件钩子，但作者自己还没用它做过任何东西**
+   <font color="comment">datasette-charts 0.4a0</font>
+   <font color="comment">Simon Willison · 11-28 07:57</font>
+   [阅读原文](https://simonwillison.net/2026/Nov/27/datasette-charts/)
+
+2. **修复与 Datasette 1.0a44 的兼容问题，适配新版接口**
+   <font color="comment">datasette-mcp 0.4</font>
+   <font color="comment">Simon Willison · 11-27 08:26</font>
+   [阅读原文](https://simonwillison.net/2026/Nov/27/datasette-mcp/)
+
+3. **AI 让表达趋同，YouTube 视频和会议演讲听起来都像 Claude**
+   <font color="comment">Quoting Jack Despain Zhou</font>
+   <font color="comment">Simon Willison · 11-26 23:09</font>
+   [阅读原文](https://simonwillison.net/2026/Nov/26/jack-despain-zhou/)
+
+4. **SQLite 3.47 起内置的实验性工具，今天才被注意到有独特优势**
+   <font color="comment">sqlite3_rsync: Database Remote-Copy Tool For SQLite</font>
+   <font color="comment">Simon Willison · 11-26 14:08</font>
+   [阅读原文](https://simonwillison.net/2026/Nov/26/sqlite3-rsync/)
+
+5. **纽约时报提醒摄影师别升级 Photoshop，担心 AI 功能改动照片**
+   <font color="comment">The New York Times warns photographers not to update…</font>
+   <font color="comment">Simon Willison · 11-26 13:08</font>
+   [阅读原文](https://simonwillison.net/2026/Nov/26/hn-50651685/)
+
+**📄 论文速览** · 有工程价值的论文
+
+1. **发布 IRTIQA 基准，检验智能体自进化能否从英语迁移到乌尔都语**
+   <font color="comment">IRTIQA: Evolving in English, Evaluated in Urdu -- Does Agent…</font>
+   <font color="comment">cs.CL · 11-25 20:56</font>
+   [阅读原文](https://arxiv.org/abs/2611.34303v1)
+
+---
+<font color="comment">完整页面 [点击查看](https://fredombobo.github.io/ai-hotlist/)</font>

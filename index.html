@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 热点日报</title>
+<style>
+  :root {
+    --bg: #fafafa;
+    --surface: #ffffff;
+    --border: #e5e5e5;
+    --border-strong: #d4d4d4;
+    --text: #18181b;
+    --text-2: #52525b;
+    --text-3: #a1a1aa;
+    --lime: #C5E803;
+    --lime-soft: #f2fac4;
+    --radius: 6px;
+    --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+            "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
+
+  /* ---------- Header ---------- */
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 40px 0 24px;
+    margin-bottom: 32px;
+  }
+  .kicker {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-3);
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  h1 .dot { color: var(--lime); }
+  .stats { display: flex; gap: 20px; flex-wrap: wrap; font-size: 13px; }
+  .stat { display: flex; align-items: baseline; gap: 6px; color: var(--text-2); }
+  .stat b {
+    font-family: var(--mono);
+    font-size: 15px;
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  /* ---------- 简报预览 ---------- */
+  .preview {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+  .preview-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    background: #f4f4f5;
+  }
+  .preview-head span {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-2);
+  }
+  .preview-head em {
+    font-style: normal;
+    font-size: 11px;
+    color: var(--text-3);
+  }
+  pre.brief {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    line-height: 1.85;
+    color: var(--text);
+    padding: 18px 20px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  /* ---------- Sections ---------- */
+  section { margin-bottom: 44px; }
+  .sec-head {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding-bottom: 12px;
+    margin-bottom: 2px;
+    border-bottom: 2px solid var(--text);
+  }
+  .sec-head .ico { font-size: 17px; }
+  .sec-head h2 {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .sec-head .hint {
+    font-size: 12.5px;
+    color: var(--text-3);
+    margin-left: 2px;
+  }
+  .sec-head .n {
+    margin-left: auto;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-3);
+  }
+
+  /* ---------- Item ---------- */
+  .item {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 0 12px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .item:last-child { border-bottom: none; }
+  .item .idx {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--text-3);
+    padding-top: 2px;
+  }
+  .item .lead {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 6px;
+    letter-spacing: -0.005em;
+  }
+  .item .lead a { color: var(--text); text-decoration: none; }
+  .item .lead a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--lime);
+    text-decoration-thickness: 2.5px;
+    text-underline-offset: 3px;
+  }
+  .item .orig {
+    font-size: 13px;
+    color: var(--text-2);
+    margin-bottom: 8px;
+    line-height: 1.55;
+  }
+  .item .meta {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-3);
+  }
+  .item .meta .tag {
+    padding: 2px 7px;
+    border: 1px solid var(--border-strong);
+    border-radius: 3px;
+    color: var(--text-2);
+    background: var(--surface);
+  }
+  .item .meta .hot {
+    background: var(--lime-soft);
+    border-color: var(--lime);
+    color: #4a5700;
+    font-weight: 600;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+    font-size: 12px;
+    color: var(--text-3);
+    font-family: var(--mono);
+    line-height: 1.9;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker">Daily Briefing</div>
+    <h1>AI 热点日报<span class="dot">.</span></h1>
+    <div class="stats">
+      
+      <span class="stat">📰 值得一读 <b>5</b></span>
+      
+      <span class="stat">📄 论文速览 <b>1</b></span>
+      
+      <span class="stat" style="margin-left:auto">2026-11-28 12:49 CST</span>
+    </div>
+  </header>
+
+  <div class="preview">
+    <div class="preview-head">
+      <span>简报预览 · 企业微信实际观感</span>
+      <em>docs/brief.txt</em>
+    </div>
+    <pre class="brief">🔥 **AI 热点日报** · 11/28
+<font color="comment">值得一读 5 | 论文速览 1</font>
+
+**📰 值得一读** · 媒体解读与观点
+
+1. **新增图表类型插件钩子，但作者自己还没用它做过任何东西**
+   <font color="comment">datasette-charts 0.4a0</font>
+   <font color="comment">Simon Willison · 11-28 07:57</font>
+   [阅读原文](https://simonwillison.net/2026/Nov/27/datasette-charts/)
+
+2. **修复与 Datasette 1.0a44 的兼容问题，适配新版接口**
+   <font color="comment">datasette-mcp 0.4</font>
+   <font color="comment">Simon Willison · 11-27 08:26</font>
+   [阅读原文](https://simonwillison.net/2026/Nov/27/datasette-mcp/)
+
+3. **AI 让表达趋同，YouTube 视频和会议演讲听起来都像 Claude**
+   <font color="comment">Quoting Jack Despain Zhou</font>
+   <font color="comment">Simon Willison · 11-26 23:09</font>
+   [阅读原文](https://simonwillison.net/2026/Nov/26/jack-despain-zhou/)
+
+4. **SQLite 3.47 起内置的实验性工具，今天才被注意到有独特优势**
+   <font color="comment">sqlite3_rsync: Database Remote-Copy Tool For SQLite</font>
+   <font color="comment">Simon Willison · 11-26 14:08</font>
+   [阅读原文](https://simonwillison.net/2026/Nov/26/sqlite3-rsync/)
+
+5. **纽约时报提醒摄影师别升级 Photoshop，担心 AI 功能改动照片**
+   <font color="comment">The New York Times warns photographers not to update…</font>
+   <font color="comment">Simon Willison · 11-26 13:08</font>
+   [阅读原文](https://simonwillison.net/2026/Nov/26/hn-50651685/)
+
+**📄 论文速览** · 有工程价值的论文
+
+1. **发布 IRTIQA 基准，检验智能体自进化能否从英语迁移到乌尔都语**
+   <font color="comment">IRTIQA: Evolving in English, Evaluated in Urdu -- Does Agent…</font>
+   <font color="comment">cs.CL · 11-25 20:56</font>
+   [阅读原文](https://arxiv.org/abs/2611.34303v1)
+
+---
+<font color="comment">完整页面 [点击查看](https://fredombobo.github.io/ai-hotlist/)</font></pre>
+  </div>
+
+  
+  <section>
+    <div class="sec-head">
+      <span class="ico">📰</span>
+      <h2>值得一读</h2>
+      <span class="hint">媒体解读与观点</span>
+      <span class="n">5</span>
+    </div>
+    
+    <div class="item">
+      <div class="idx">01</div>
+      <div>
+        <div class="lead">
+          <a href="https://simonwillison.net/2026/Nov/27/datasette-charts/" target="_blank" rel="noopener">新增图表类型插件钩子，但作者自己还没用它做过任何东西</a>
+        </div>
+        
+        <div class="orig">datasette-charts 0.4a0</div>
+        
+        <div class="meta">
+          
+          
+          
+          <span class="tag">Simon Willison</span>
+          
+          
+          <span>11-28 07:57</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="item">
+      <div class="idx">02</div>
+      <div>
+        <div class="lead">
+          <a href="https://simonwillison.net/2026/Nov/27/datasette-mcp/" target="_blank" rel="noopener">修复与 Datasette 1.0a44 的兼容问题，适配新版接口</a>
+        </div>
+        
+        <div class="orig">datasette-mcp 0.4</div>
+        
+        <div class="meta">
+          
+          
+          
+          <span class="tag">Simon Willison</span>
+          
+          
+          <span>11-27 08:26</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="item">
+      <div class="idx">03</div>
+      <div>
+        <div class="lead">
+          <a href="https://simonwillison.net/2026/Nov/26/jack-despain-zhou/" target="_blank" rel="noopener">AI 让表达趋同，YouTube 视频和会议演讲听起来都像 Claude</a>
+        </div>
+        
+        <div class="orig">Quoting Jack Despain Zhou</div>
+        
+        <div class="meta">
+          
+          
+          
+          <span class="tag">Simon Willison</span>
+          
+          
+          <span>11-26 23:09</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="item">
+      <div class="idx">04</div>
+      <div>
+        <div class="lead">
+          <a href="https://simonwillison.net/2026/Nov/26/sqlite3-rsync/" target="_blank" rel="noopener">SQLite 3.47 起内置的实验性工具，今天才被注意到有独特优势</a>
+        </div>
+        
+        <div class="orig">sqlite3_rsync: Database Remote-Copy Tool For SQLite</div>
+        
+        <div class="meta">
+          
+          
+          
+          <span class="tag">Simon Willison</span>
+          
+          
+          <span>11-26 14:08</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="item">
+      <div class="idx">05</div>
+      <div>
+        <div class="lead">
+          <a href="https://simonwillison.net/2026/Nov/26/hn-50651685/" target="_blank" rel="noopener">纽约时报提醒摄影师别升级 Photoshop，担心 AI 功能改动照片</a>
+        </div>
+        
+        <div class="orig">The New York Times warns photographers not to update Photoshop over AI features</div>
+        
+        <div class="meta">
+          
+          
+          
+          <span class="tag">Simon Willison</span>
+          
+          
+          <span>11-26 13:08</span>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  
+  <section>
+    <div class="sec-head">
+      <span class="ico">📄</span>
+      <h2>论文速览</h2>
+      <span class="hint">有工程价值的论文</span>
+      <span class="n">1</span>
+    </div>
+    
+    <div class="item">
+      <div class="idx">01</div>
+      <div>
+        <div class="lead">
+          <a href="https://arxiv.org/abs/2611.34303v1" target="_blank" rel="noopener">发布 IRTIQA 基准，检验智能体自进化能否从英语迁移到乌尔都语</a>
+        </div>
+        
+        <div class="orig">IRTIQA: Evolving in English, Evaluated in Urdu -- Does Agent Self-Evolution Transfer from English to Urdu and Code-Switched Input?</div>
+        
+        <div class="meta">
+          
+          
+          
+          
+          <span class="tag">cs.CL</span>
+          
+          <span>11-25 20:56</span>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  
+
+  <footer>
+    AI 热点日报 · 每日自动更新<br>
+    数据来源：GitHub · 英文媒体与博客 · arXiv<br>
+    生成时间 2026-11-28 12:49 CST
+  </footer>
+
+</div>
+</body>
+</html>
